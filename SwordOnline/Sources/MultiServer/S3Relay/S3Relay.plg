@@ -1,0 +1,145 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: S3Relay - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/S3Relay.res" /d "_DEBUG" "C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\S3Relay.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\2\RSPAC8C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_WORKMODE_SINGLETHREAD" /D "_TESTING" /FR"Debug/" /Fp"Debug/S3Relay.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\ChannelMgr.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\ChatConnect.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\ChatServer.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\DBConnect.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\DBTable.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\DealRelay.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\DoScript.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\FriendMgr.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\GatewayCenter.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\GatewayClient.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\Global.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\GlobalFun.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\HeavenLib.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\HostConnect.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\HostServer.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\KThread.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\Lock.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\LogFile.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\Memory.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\NetCenter.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\NetClient.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\NetConnect.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\NetServer.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\NetSockDupEx.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\RainbowLib.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\RelayCenter.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\RelayClient.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\RelayConnect.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\RelayServer.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\RootCenter.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\RootClient.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\S3P_MSSQLServer_Result.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\S3PDB_MSSQLServer_Connection.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\S3PDBConVBC.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\S3PResultVBC.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\S3Relay.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\SockThread.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\TongConnect.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\TongServer.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\KTongControl.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\KTongSet.cpp"
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\TONGDB.CPP"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\2\RSPAC8C.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\2\RSPAC8D.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_WORKMODE_SINGLETHREAD" /D "_TESTING" /FR"Debug/" /Fp"Debug/S3Relay.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Administrator\Downloads\sv\SwordOnline-03092022\SwordOnline\Sources\MultiServer\S3Relay\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\2\RSPAC8D.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\2\RSPAC8E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Ws2_32.lib lualibdll.lib LIBCMTD.lib libcmt.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/S3Relay.pdb" /debug /machine:I386 /out:"Debug/S3Relay.exe" /pdbtype:sept 
+".\Debug\ChannelMgr.obj"
+".\Debug\ChatConnect.obj"
+".\Debug\ChatServer.obj"
+".\Debug\DBConnect.obj"
+".\Debug\DBTable.obj"
+".\Debug\DealRelay.obj"
+".\Debug\DoScript.obj"
+".\Debug\FriendMgr.obj"
+".\Debug\GatewayCenter.obj"
+".\Debug\GatewayClient.obj"
+".\Debug\Global.obj"
+".\Debug\GlobalFun.obj"
+".\Debug\HeavenLib.obj"
+".\Debug\HostConnect.obj"
+".\Debug\HostServer.obj"
+".\Debug\KThread.obj"
+".\Debug\Lock.obj"
+".\Debug\LogFile.obj"
+".\Debug\Memory.obj"
+".\Debug\NetCenter.obj"
+".\Debug\NetClient.obj"
+".\Debug\NetConnect.obj"
+".\Debug\NetServer.obj"
+".\Debug\NetSockDupEx.obj"
+".\Debug\RainbowLib.obj"
+".\Debug\RelayCenter.obj"
+".\Debug\RelayClient.obj"
+".\Debug\RelayConnect.obj"
+".\Debug\RelayServer.obj"
+".\Debug\RootCenter.obj"
+".\Debug\RootClient.obj"
+".\Debug\S3P_MSSQLServer_Result.obj"
+".\Debug\S3PDB_MSSQLServer_Connection.obj"
+".\Debug\S3PDBConVBC.obj"
+".\Debug\S3PResultVBC.obj"
+".\Debug\S3Relay.obj"
+".\Debug\SockThread.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TongConnect.obj"
+".\Debug\TongServer.obj"
+".\Debug\KTongControl.obj"
+".\Debug\KTongSet.obj"
+".\Debug\TONGDB.OBJ"
+".\Debug\S3Relay.res"
+"..\..\..\Lib\debug\engine.lib"
+".\libdb41s.lib"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\2\RSPAC8E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+Compiling...
+Linking...
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\2\RSPAD4B.bat" with contents
+[
+@echo off
+md ..\..\..\..\bin\multiserver\debug\
+copy debug\S3Relay.exe ..\..\..\..\bin\multiserver\S3Relay.exe
+copy debug\S3Relay.exe ..\..\..\..\bin\multiserver\debug\S3Relay.exe
+md ..\..\..\..\bin\server\debug\
+copy debug\S3Relay.exe ..\..\..\..\bin\server\S3Relay.exe
+copy debug\S3Relay.exe ..\..\..\..\bin\server\debug\S3Relay.exe
+]
+Creating command line "C:\Users\ADMINI~1\AppData\Local\Temp\2\RSPAD4B.bat"
+
+A subdirectory or file ..\..\..\..\bin\multiserver\debug\ already exists.
+The system cannot find the file specified.
+The system cannot find the file specified.
+A subdirectory or file ..\..\..\..\bin\server\debug\ already exists.
+The system cannot find the file specified.
+The system cannot find the file specified.
+Error executing c:\windows\system32\cmd.exe.
+
+
+
+<h3>Results</h3>
+S3Relay.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

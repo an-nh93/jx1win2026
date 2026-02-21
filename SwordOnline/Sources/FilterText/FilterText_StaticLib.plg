@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FilterText_StaticLib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\PC\AppData\Local\Temp\RSPC417.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "FILTERTEXT_STATICLIB" /Fp"FilterText_StaticLib___Win32_Debug/FilterText_StaticLib.pch" /YX /Fo"FilterText_StaticLib___Win32_Debug/" /Fd"FilterText_StaticLib___Win32_Debug/" /FD /GZ /c
+"D:\SourceTK\SwordOnline\Sources\FilterText\FilterText.cpp"
+"D:\SourceTK\SwordOnline\Sources\FilterText\Regexp.cpp"
+]
+Creating command line "cl.exe @C:\Users\PC\AppData\Local\Temp\RSPC417.tmp"
+Creating command line "link.exe -lib /nologo /out:"FilterText_StaticLib___Win32_Debug\FilterText_StaticLib.lib"  .\FilterText_StaticLib___Win32_Debug\FilterText.obj .\FilterText_StaticLib___Win32_Debug\Regexp.obj "
+<h3>Output Window</h3>
+Compiling...
+FilterText.cpp
+Regexp.cpp
+Creating library...
+Creating temporary file "C:\Users\PC\AppData\Local\Temp\RSPC7F0.bat" with contents
+[
+@echo off
+md ..\..\lib\debug
+copy FilterText_StaticLib___Win32_Debug\FilterText_StaticLib.lib ..\..\lib\debug\FilterText_StaticLib.lib
+]
+Creating command line "C:\Users\PC\AppData\Local\Temp\RSPC7F0.bat"
+
+A subdirectory or file ..\..\lib\debug already exists.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+FilterText_StaticLib.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

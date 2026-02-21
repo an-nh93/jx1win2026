@@ -1,0 +1,288 @@
+\doxysection{S3\+Client.\+cpp File Reference}
+\hypertarget{_s3_client_8cpp}{}\label{_s3_client_8cpp}\index{S3Client.cpp@{S3Client.cpp}}
+{\ttfamily \#include "{}KWin32.\+h"{}}\newline
+{\ttfamily \#include "{}KCore.\+h"{}}\newline
+{\ttfamily \#include "{}S3\+Client.\+h"{}}\newline
+{\ttfamily \#include "{}KWin32\+Wnd.\+h"{}}\newline
+{\ttfamily \#include "{}../../\+Represent/i\+Represent/i\+Represent\+Shell.\+h"{}}\newline
+{\ttfamily \#include "{}Ui/\+Ui\+Shell.\+h"{}}\newline
+{\ttfamily \#include "{}Net\+Connect/\+Net\+Connect\+Agent.\+h"{}}\newline
+{\ttfamily \#include "{}Text\+Ctrl\+Cmd/\+Text\+Ctrl\+Cmd.\+h"{}}\newline
+{\ttfamily \#include "{}KPak\+List.\+h"{}}\newline
+{\ttfamily \#include "{}Ui/\+Elem/\+Text\+Pic.\+h"{}}\newline
+{\ttfamily \#include "{}Ui/\+Elem/\+Ui\+Cursor.\+h"{}}\newline
+{\ttfamily \#include "{}Ui/\+Elem/\+Special\+Funcs.\+h"{}}\newline
+{\ttfamily \#include "{}Ui/\+Filter\+Text\+Lib.\+h"{}}\newline
+{\ttfamily \#include "{}Ui/\+Chat\+Filter.\+h"{}}\newline
+{\ttfamily \#include "{}Ui/uibase.\+h"{}}\newline
+{\ttfamily \#include "{}Error\+Code.\+h"{}}\newline
+{\ttfamily \#include $<$tchar.\+h$>$}\newline
+{\ttfamily \#include $<$tlhelp32.\+h$>$}\newline
+{\ttfamily \#include "{}S3\+Config.\+h"{}}\newline
+{\ttfamily \#include "{}Ui/\+Ui\+Case/\+Ui\+Init.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_s3_client_8cpp_a70c5bb42ff86b6e4814cfbe6afce2ef5}{Client\+Version}}
+\item 
+\#define \mbox{\hyperlink{_s3_client_8cpp_a94fe99e48d09e68a6ac2a5027238992f}{QUIT\+\_\+\+QUESTION\+\_\+\+ID}}~"{}22"{}
+\item 
+\#define \mbox{\hyperlink{_s3_client_8cpp_a37d5c0b96bb30d205ccf6311d6e6b3fa}{GAME\+\_\+\+TITLE}}~"{}23"{}
+\item 
+\#define \mbox{\hyperlink{_s3_client_8cpp_aa4e11d0ad50d1a17f853ec3c64ca5e7d}{REPRESENT\+\_\+\+MODULE\+\_\+2}}~"{}Represent2.\+dll"{}
+\item 
+\#define \mbox{\hyperlink{_s3_client_8cpp_a4ca4b83522a0309ecadbbcb57e979d9d}{REPRESENT\+\_\+\+MODULE\+\_\+3}}~"{}Represent3.\+dll"{}
+\item 
+\#define \mbox{\hyperlink{_s3_client_8cpp_aef009b93747b912a46c65842fd556315}{CREATE\+\_\+\+REPRESENT\+\_\+\+SHELL\+\_\+\+FUN}}~"{}Create\+Represent\+Shell"{}
+\item 
+\#define \mbox{\hyperlink{_s3_client_8cpp_a63a780eb9590cbea188494a74c8eb79e}{GAME\+\_\+\+FPS}}~18
+\item 
+\#define \mbox{\hyperlink{_s3_client_8cpp_a003ade1dc0ece689f1b9b9ae03694164}{DYNAMIC\+\_\+\+LINK\+\_\+\+REPRESENT\+\_\+\+LIBRARY}}
+\item 
+\#define \mbox{\hyperlink{_s3_client_8cpp_a2cd109632a6dcccaa80b43561b1ab700}{SCREEN\+\_\+\+WIDTH}}~800
+\item 
+\#define \mbox{\hyperlink{_s3_client_8cpp_a6974d08a74da681b3957b2fead2608b8}{SCREEN\+\_\+\+HEIGHT}}~600
+\item 
+\#define \mbox{\hyperlink{_s3_client_8cpp_ac7e2c364f481f8fcccd6d65e4fcacf04}{\+\_\+private\+\_\+\+IS\+\_\+\+SPACE}}(c)~((c) == \textquotesingle{} \textquotesingle{} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} (c) == \textquotesingle{}\textbackslash{}r\textquotesingle{} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} (c) == \textquotesingle{}\textbackslash{}n\textquotesingle{} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} (c) == \textquotesingle{}\textbackslash{}t\textquotesingle{} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} (c) == \textquotesingle{}x\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{_s3_client_8cpp_a2a504e39014b7b57020b6b32e42c2fd4}{IS\+\_\+\+SPACE}}(c)~\mbox{\hyperlink{_s3_client_8cpp_ac7e2c364f481f8fcccd6d65e4fcacf04}{\+\_\+private\+\_\+\+IS\+\_\+\+SPACE}}(c)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int APIENTRY \mbox{\hyperlink{_s3_client_8cpp_a1122673f59be78a3997ec7dd1c4688f9}{Win\+Main}} (HINSTANCE h\+Instance, HINSTANCE h\+Prev\+Instance, LPSTR lp\+Cmd\+Line, int n\+Cmd\+Show)
+\item 
+BOOL \mbox{\hyperlink{_s3_client_8cpp_a2e0415dd1f5e7cfd42977f75a1393700}{Init\+Represent\+Shell}} (BOOL b\+Full\+Screen, int n\+Width, int n\+Height)
+\item 
+void \mbox{\hyperlink{_s3_client_8cpp_a8bfcf744558df4b33320a2d7ddede653}{Hex\+Number\+Cheat\+Hack}} (int limit)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_s3_client_8cpp_a3262a5c8e3353b9e0be4dfe2abb6f1f1}{Hex\+String\+Cheat\+Hack}} (char \texorpdfstring{$\ast$}{*}hex\+Str)
+\item 
+void \mbox{\hyperlink{_s3_client_8cpp_a25bd9bf0c5e0ef5451abd85bba785faa}{Version\+Client}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_my_app}{KMy\+App}} \mbox{\hyperlink{_s3_client_8cpp_a38728f809db9cbb94599f60b109ef1d9}{My\+App}}
+\item 
+HINSTANCE \mbox{\hyperlink{_s3_client_8cpp_a44f41244c97693b2fbd5244bcb1e86ec}{h\+Inst}}
+\item 
+KPak\+List \mbox{\hyperlink{_s3_client_8cpp_ab51d4ef82b8c002bf76e90abb8b02b3b}{g\+\_\+\+Pak\+List}}
+\item 
+CFilter\+Text\+Lib \mbox{\hyperlink{_s3_client_8cpp_a5a548d36e3c95a0c6a9baa276b3c4133}{g\+\_\+lib\+Filter\+Text}}
+\item 
+CChat\+Filter \mbox{\hyperlink{_s3_client_8cpp_a47526cb73b39ecfdc30187afea0b15b8}{g\+\_\+\+Chat\+Filter}}
+\item 
+struct i\+Represent\+Shell \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_s3_client_8cpp_a96813c5647811d5efc2ee13f2e4ed3ce}{g\+\_\+p\+Represent\+Shell}} = NULL
+\item 
+struct IInline\+Pic\+Engine\+Sink \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_s3_client_8cpp_ad70fa47368e6e2d9c722734f2cc68330}{g\+\_\+p\+IInline\+Pic\+Sink}} = NULL
+\item 
+i\+Core\+Shell \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_s3_client_8cpp_a746d828387f2ce159058d3cefececa85}{g\+\_\+p\+Core\+Shell}} = NULL
+\item 
+KMusic \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_s3_client_8cpp_ac2eb04515a763b9ada9a66f2cc183ac7}{g\+\_\+p\+Music}} = NULL
+\item 
+int \mbox{\hyperlink{_s3_client_8cpp_a6de8668fcca6d23a93fe6b52b2b2cb4d}{g\+\_\+b\+Represent3}} = false
+\item 
+int \mbox{\hyperlink{_s3_client_8cpp_a7dd792fa66fc60be92db075bdd9a5210}{g\+\_\+b\+Screen}} = true
+\item 
+char \mbox{\hyperlink{_s3_client_8cpp_a05a2f42d3a8fd4ed8562ef4b6e0b928a}{g\+\_\+sz\+Game\+Name}} \mbox{[}128\mbox{]} = "{}11/11/2019"{}
+\item 
+\mbox{\hyperlink{struct_k_client_callback}{KClient\+Callback}} \mbox{\hyperlink{_s3_client_8cpp_a0557f0e94d15d98e513292c696a2623f}{g\+\_\+\+Client\+Callback}}
+\item 
+int \mbox{\hyperlink{_s3_client_8cpp_a53ba4d88ab19d8639122a62ef950a017}{check\+VNWCount\+Timer}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_s3_client_8cpp_ac7e2c364f481f8fcccd6d65e4fcacf04}\label{_s3_client_8cpp_ac7e2c364f481f8fcccd6d65e4fcacf04} 
+\index{S3Client.cpp@{S3Client.cpp}!\_private\_IS\_SPACE@{\_private\_IS\_SPACE}}
+\index{\_private\_IS\_SPACE@{\_private\_IS\_SPACE}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{\_private\_IS\_SPACE}{\_private\_IS\_SPACE}}
+{\footnotesize\ttfamily \#define \+\_\+private\+\_\+\+IS\+\_\+\+SPACE(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~((c) == \textquotesingle{} \textquotesingle{} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} (c) == \textquotesingle{}\textbackslash{}r\textquotesingle{} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} (c) == \textquotesingle{}\textbackslash{}n\textquotesingle{} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} (c) == \textquotesingle{}\textbackslash{}t\textquotesingle{} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} (c) == \textquotesingle{}x\textquotesingle{})}
+
+\Hypertarget{_s3_client_8cpp_a70c5bb42ff86b6e4814cfbe6afce2ef5}\label{_s3_client_8cpp_a70c5bb42ff86b6e4814cfbe6afce2ef5} 
+\index{S3Client.cpp@{S3Client.cpp}!ClientVersion@{ClientVersion}}
+\index{ClientVersion@{ClientVersion}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{ClientVersion}{ClientVersion}}
+{\footnotesize\ttfamily \#define Client\+Version}
+
+\Hypertarget{_s3_client_8cpp_aef009b93747b912a46c65842fd556315}\label{_s3_client_8cpp_aef009b93747b912a46c65842fd556315} 
+\index{S3Client.cpp@{S3Client.cpp}!CREATE\_REPRESENT\_SHELL\_FUN@{CREATE\_REPRESENT\_SHELL\_FUN}}
+\index{CREATE\_REPRESENT\_SHELL\_FUN@{CREATE\_REPRESENT\_SHELL\_FUN}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{CREATE\_REPRESENT\_SHELL\_FUN}{CREATE\_REPRESENT\_SHELL\_FUN}}
+{\footnotesize\ttfamily \#define CREATE\+\_\+\+REPRESENT\+\_\+\+SHELL\+\_\+\+FUN~"{}Create\+Represent\+Shell"{}}
+
+\Hypertarget{_s3_client_8cpp_a003ade1dc0ece689f1b9b9ae03694164}\label{_s3_client_8cpp_a003ade1dc0ece689f1b9b9ae03694164} 
+\index{S3Client.cpp@{S3Client.cpp}!DYNAMIC\_LINK\_REPRESENT\_LIBRARY@{DYNAMIC\_LINK\_REPRESENT\_LIBRARY}}
+\index{DYNAMIC\_LINK\_REPRESENT\_LIBRARY@{DYNAMIC\_LINK\_REPRESENT\_LIBRARY}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{DYNAMIC\_LINK\_REPRESENT\_LIBRARY}{DYNAMIC\_LINK\_REPRESENT\_LIBRARY}}
+{\footnotesize\ttfamily \#define DYNAMIC\+\_\+\+LINK\+\_\+\+REPRESENT\+\_\+\+LIBRARY}
+
+\Hypertarget{_s3_client_8cpp_a63a780eb9590cbea188494a74c8eb79e}\label{_s3_client_8cpp_a63a780eb9590cbea188494a74c8eb79e} 
+\index{S3Client.cpp@{S3Client.cpp}!GAME\_FPS@{GAME\_FPS}}
+\index{GAME\_FPS@{GAME\_FPS}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{GAME\_FPS}{GAME\_FPS}}
+{\footnotesize\ttfamily \#define GAME\+\_\+\+FPS~18}
+
+\Hypertarget{_s3_client_8cpp_a37d5c0b96bb30d205ccf6311d6e6b3fa}\label{_s3_client_8cpp_a37d5c0b96bb30d205ccf6311d6e6b3fa} 
+\index{S3Client.cpp@{S3Client.cpp}!GAME\_TITLE@{GAME\_TITLE}}
+\index{GAME\_TITLE@{GAME\_TITLE}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{GAME\_TITLE}{GAME\_TITLE}}
+{\footnotesize\ttfamily \#define GAME\+\_\+\+TITLE~"{}23"{}}
+
+\Hypertarget{_s3_client_8cpp_a2a504e39014b7b57020b6b32e42c2fd4}\label{_s3_client_8cpp_a2a504e39014b7b57020b6b32e42c2fd4} 
+\index{S3Client.cpp@{S3Client.cpp}!IS\_SPACE@{IS\_SPACE}}
+\index{IS\_SPACE@{IS\_SPACE}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{IS\_SPACE}{IS\_SPACE}}
+{\footnotesize\ttfamily \#define IS\+\_\+\+SPACE(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~\mbox{\hyperlink{_s3_client_8cpp_ac7e2c364f481f8fcccd6d65e4fcacf04}{\+\_\+private\+\_\+\+IS\+\_\+\+SPACE}}(c)}
+
+\Hypertarget{_s3_client_8cpp_a94fe99e48d09e68a6ac2a5027238992f}\label{_s3_client_8cpp_a94fe99e48d09e68a6ac2a5027238992f} 
+\index{S3Client.cpp@{S3Client.cpp}!QUIT\_QUESTION\_ID@{QUIT\_QUESTION\_ID}}
+\index{QUIT\_QUESTION\_ID@{QUIT\_QUESTION\_ID}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{QUIT\_QUESTION\_ID}{QUIT\_QUESTION\_ID}}
+{\footnotesize\ttfamily \#define QUIT\+\_\+\+QUESTION\+\_\+\+ID~"{}22"{}}
+
+\Hypertarget{_s3_client_8cpp_aa4e11d0ad50d1a17f853ec3c64ca5e7d}\label{_s3_client_8cpp_aa4e11d0ad50d1a17f853ec3c64ca5e7d} 
+\index{S3Client.cpp@{S3Client.cpp}!REPRESENT\_MODULE\_2@{REPRESENT\_MODULE\_2}}
+\index{REPRESENT\_MODULE\_2@{REPRESENT\_MODULE\_2}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{REPRESENT\_MODULE\_2}{REPRESENT\_MODULE\_2}}
+{\footnotesize\ttfamily \#define REPRESENT\+\_\+\+MODULE\+\_\+2~"{}Represent2.\+dll"{}}
+
+\Hypertarget{_s3_client_8cpp_a4ca4b83522a0309ecadbbcb57e979d9d}\label{_s3_client_8cpp_a4ca4b83522a0309ecadbbcb57e979d9d} 
+\index{S3Client.cpp@{S3Client.cpp}!REPRESENT\_MODULE\_3@{REPRESENT\_MODULE\_3}}
+\index{REPRESENT\_MODULE\_3@{REPRESENT\_MODULE\_3}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{REPRESENT\_MODULE\_3}{REPRESENT\_MODULE\_3}}
+{\footnotesize\ttfamily \#define REPRESENT\+\_\+\+MODULE\+\_\+3~"{}Represent3.\+dll"{}}
+
+\Hypertarget{_s3_client_8cpp_a6974d08a74da681b3957b2fead2608b8}\label{_s3_client_8cpp_a6974d08a74da681b3957b2fead2608b8} 
+\index{S3Client.cpp@{S3Client.cpp}!SCREEN\_HEIGHT@{SCREEN\_HEIGHT}}
+\index{SCREEN\_HEIGHT@{SCREEN\_HEIGHT}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{SCREEN\_HEIGHT}{SCREEN\_HEIGHT}}
+{\footnotesize\ttfamily \#define SCREEN\+\_\+\+HEIGHT~600}
+
+\Hypertarget{_s3_client_8cpp_a2cd109632a6dcccaa80b43561b1ab700}\label{_s3_client_8cpp_a2cd109632a6dcccaa80b43561b1ab700} 
+\index{S3Client.cpp@{S3Client.cpp}!SCREEN\_WIDTH@{SCREEN\_WIDTH}}
+\index{SCREEN\_WIDTH@{SCREEN\_WIDTH}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{SCREEN\_WIDTH}{SCREEN\_WIDTH}}
+{\footnotesize\ttfamily \#define SCREEN\+\_\+\+WIDTH~800}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_s3_client_8cpp_a8bfcf744558df4b33320a2d7ddede653}\label{_s3_client_8cpp_a8bfcf744558df4b33320a2d7ddede653} 
+\index{S3Client.cpp@{S3Client.cpp}!HexNumberCheatHack@{HexNumberCheatHack}}
+\index{HexNumberCheatHack@{HexNumberCheatHack}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{HexNumberCheatHack()}{HexNumberCheatHack()}}
+{\footnotesize\ttfamily void Hex\+Number\+Cheat\+Hack (\begin{DoxyParamCaption}\item[{int}]{limit }\end{DoxyParamCaption})}
+
+\Hypertarget{_s3_client_8cpp_a3262a5c8e3353b9e0be4dfe2abb6f1f1}\label{_s3_client_8cpp_a3262a5c8e3353b9e0be4dfe2abb6f1f1} 
+\index{S3Client.cpp@{S3Client.cpp}!HexStringCheatHack@{HexStringCheatHack}}
+\index{HexStringCheatHack@{HexStringCheatHack}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{HexStringCheatHack()}{HexStringCheatHack()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} Hex\+String\+Cheat\+Hack (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{hex\+Str }\end{DoxyParamCaption})}
+
+\Hypertarget{_s3_client_8cpp_a2e0415dd1f5e7cfd42977f75a1393700}\label{_s3_client_8cpp_a2e0415dd1f5e7cfd42977f75a1393700} 
+\index{S3Client.cpp@{S3Client.cpp}!InitRepresentShell@{InitRepresentShell}}
+\index{InitRepresentShell@{InitRepresentShell}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{InitRepresentShell()}{InitRepresentShell()}}
+{\footnotesize\ttfamily BOOL Init\+Represent\+Shell (\begin{DoxyParamCaption}\item[{BOOL}]{b\+Full\+Screen,  }\item[{int}]{n\+Width,  }\item[{int}]{n\+Height }\end{DoxyParamCaption})}
+
+\Hypertarget{_s3_client_8cpp_a25bd9bf0c5e0ef5451abd85bba785faa}\label{_s3_client_8cpp_a25bd9bf0c5e0ef5451abd85bba785faa} 
+\index{S3Client.cpp@{S3Client.cpp}!VersionClient@{VersionClient}}
+\index{VersionClient@{VersionClient}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{VersionClient()}{VersionClient()}}
+{\footnotesize\ttfamily void Version\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_s3_client_8cpp_a1122673f59be78a3997ec7dd1c4688f9}\label{_s3_client_8cpp_a1122673f59be78a3997ec7dd1c4688f9} 
+\index{S3Client.cpp@{S3Client.cpp}!WinMain@{WinMain}}
+\index{WinMain@{WinMain}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{WinMain()}{WinMain()}}
+{\footnotesize\ttfamily int APIENTRY Win\+Main (\begin{DoxyParamCaption}\item[{HINSTANCE}]{h\+Instance,  }\item[{HINSTANCE}]{h\+Prev\+Instance,  }\item[{LPSTR}]{lp\+Cmd\+Line,  }\item[{int}]{n\+Cmd\+Show }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_s3_client_8cpp_a53ba4d88ab19d8639122a62ef950a017}\label{_s3_client_8cpp_a53ba4d88ab19d8639122a62ef950a017} 
+\index{S3Client.cpp@{S3Client.cpp}!checkVNWCountTimer@{checkVNWCountTimer}}
+\index{checkVNWCountTimer@{checkVNWCountTimer}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{checkVNWCountTimer}{checkVNWCountTimer}}
+{\footnotesize\ttfamily int check\+VNWCount\+Timer = 0}
+
+\Hypertarget{_s3_client_8cpp_a6de8668fcca6d23a93fe6b52b2b2cb4d}\label{_s3_client_8cpp_a6de8668fcca6d23a93fe6b52b2b2cb4d} 
+\index{S3Client.cpp@{S3Client.cpp}!g\_bRepresent3@{g\_bRepresent3}}
+\index{g\_bRepresent3@{g\_bRepresent3}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_bRepresent3}{g\_bRepresent3}}
+{\footnotesize\ttfamily int g\+\_\+b\+Represent3 = false}
+
+\Hypertarget{_s3_client_8cpp_a7dd792fa66fc60be92db075bdd9a5210}\label{_s3_client_8cpp_a7dd792fa66fc60be92db075bdd9a5210} 
+\index{S3Client.cpp@{S3Client.cpp}!g\_bScreen@{g\_bScreen}}
+\index{g\_bScreen@{g\_bScreen}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_bScreen}{g\_bScreen}}
+{\footnotesize\ttfamily int g\+\_\+b\+Screen = true}
+
+\Hypertarget{_s3_client_8cpp_a47526cb73b39ecfdc30187afea0b15b8}\label{_s3_client_8cpp_a47526cb73b39ecfdc30187afea0b15b8} 
+\index{S3Client.cpp@{S3Client.cpp}!g\_ChatFilter@{g\_ChatFilter}}
+\index{g\_ChatFilter@{g\_ChatFilter}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_ChatFilter}{g\_ChatFilter}}
+{\footnotesize\ttfamily CChat\+Filter g\+\_\+\+Chat\+Filter}
+
+\Hypertarget{_s3_client_8cpp_a0557f0e94d15d98e513292c696a2623f}\label{_s3_client_8cpp_a0557f0e94d15d98e513292c696a2623f} 
+\index{S3Client.cpp@{S3Client.cpp}!g\_ClientCallback@{g\_ClientCallback}}
+\index{g\_ClientCallback@{g\_ClientCallback}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_ClientCallback}{g\_ClientCallback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_k_client_callback}{KClient\+Callback}} g\+\_\+\+Client\+Callback}
+
+\Hypertarget{_s3_client_8cpp_a5a548d36e3c95a0c6a9baa276b3c4133}\label{_s3_client_8cpp_a5a548d36e3c95a0c6a9baa276b3c4133} 
+\index{S3Client.cpp@{S3Client.cpp}!g\_libFilterText@{g\_libFilterText}}
+\index{g\_libFilterText@{g\_libFilterText}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_libFilterText}{g\_libFilterText}}
+{\footnotesize\ttfamily CFilter\+Text\+Lib g\+\_\+lib\+Filter\+Text}
+
+\Hypertarget{_s3_client_8cpp_ab51d4ef82b8c002bf76e90abb8b02b3b}\label{_s3_client_8cpp_ab51d4ef82b8c002bf76e90abb8b02b3b} 
+\index{S3Client.cpp@{S3Client.cpp}!g\_PakList@{g\_PakList}}
+\index{g\_PakList@{g\_PakList}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_PakList}{g\_PakList}}
+{\footnotesize\ttfamily KPak\+List g\+\_\+\+Pak\+List}
+
+\Hypertarget{_s3_client_8cpp_a746d828387f2ce159058d3cefececa85}\label{_s3_client_8cpp_a746d828387f2ce159058d3cefececa85} 
+\index{S3Client.cpp@{S3Client.cpp}!g\_pCoreShell@{g\_pCoreShell}}
+\index{g\_pCoreShell@{g\_pCoreShell}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_pCoreShell}{g\_pCoreShell}}
+{\footnotesize\ttfamily i\+Core\+Shell\texorpdfstring{$\ast$}{*} g\+\_\+p\+Core\+Shell = NULL}
+
+\Hypertarget{_s3_client_8cpp_ad70fa47368e6e2d9c722734f2cc68330}\label{_s3_client_8cpp_ad70fa47368e6e2d9c722734f2cc68330} 
+\index{S3Client.cpp@{S3Client.cpp}!g\_pIInlinePicSink@{g\_pIInlinePicSink}}
+\index{g\_pIInlinePicSink@{g\_pIInlinePicSink}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_pIInlinePicSink}{g\_pIInlinePicSink}}
+{\footnotesize\ttfamily struct IInline\+Pic\+Engine\+Sink\texorpdfstring{$\ast$}{*} g\+\_\+p\+IInline\+Pic\+Sink = NULL}
+
+\Hypertarget{_s3_client_8cpp_ac2eb04515a763b9ada9a66f2cc183ac7}\label{_s3_client_8cpp_ac2eb04515a763b9ada9a66f2cc183ac7} 
+\index{S3Client.cpp@{S3Client.cpp}!g\_pMusic@{g\_pMusic}}
+\index{g\_pMusic@{g\_pMusic}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_pMusic}{g\_pMusic}}
+{\footnotesize\ttfamily KMusic\texorpdfstring{$\ast$}{*} g\+\_\+p\+Music = NULL}
+
+\Hypertarget{_s3_client_8cpp_a96813c5647811d5efc2ee13f2e4ed3ce}\label{_s3_client_8cpp_a96813c5647811d5efc2ee13f2e4ed3ce} 
+\index{S3Client.cpp@{S3Client.cpp}!g\_pRepresentShell@{g\_pRepresentShell}}
+\index{g\_pRepresentShell@{g\_pRepresentShell}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_pRepresentShell}{g\_pRepresentShell}}
+{\footnotesize\ttfamily struct i\+Represent\+Shell\texorpdfstring{$\ast$}{*} g\+\_\+p\+Represent\+Shell = NULL}
+
+\Hypertarget{_s3_client_8cpp_a05a2f42d3a8fd4ed8562ef4b6e0b928a}\label{_s3_client_8cpp_a05a2f42d3a8fd4ed8562ef4b6e0b928a} 
+\index{S3Client.cpp@{S3Client.cpp}!g\_szGameName@{g\_szGameName}}
+\index{g\_szGameName@{g\_szGameName}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_szGameName}{g\_szGameName}}
+{\footnotesize\ttfamily char g\+\_\+sz\+Game\+Name\mbox{[}128\mbox{]} = "{}11/11/2019"{}}
+
+\Hypertarget{_s3_client_8cpp_a44f41244c97693b2fbd5244bcb1e86ec}\label{_s3_client_8cpp_a44f41244c97693b2fbd5244bcb1e86ec} 
+\index{S3Client.cpp@{S3Client.cpp}!hInst@{hInst}}
+\index{hInst@{hInst}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{hInst}{hInst}}
+{\footnotesize\ttfamily HINSTANCE h\+Inst}
+
+\Hypertarget{_s3_client_8cpp_a38728f809db9cbb94599f60b109ef1d9}\label{_s3_client_8cpp_a38728f809db9cbb94599f60b109ef1d9} 
+\index{S3Client.cpp@{S3Client.cpp}!MyApp@{MyApp}}
+\index{MyApp@{MyApp}!S3Client.cpp@{S3Client.cpp}}
+\doxysubsubsection{\texorpdfstring{MyApp}{MyApp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_my_app}{KMy\+App}} My\+App}
+

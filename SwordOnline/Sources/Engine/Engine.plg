@@ -1,0 +1,204 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Engine - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\PC\AppData\Local\Temp\RSP38.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /I "include" /I "..\Pack\ucl-1.01\include" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ENGINE_EXPORTS" /D WINVER=0x0500 /Fp"Release/Engine.pch" /YX"KWin32.h" /Fo"Release/" /Fd"Release/" /FD /c
+"D:\SourceTK\SwordOnline\Sources\Engine\Src\Text.cpp"
+]
+Creating command line "cl.exe @C:\Users\PC\AppData\Local\Temp\RSP38.tmp"
+Creating temporary file "C:\Users\PC\AppData\Local\Temp\RSP39.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib comdlg32.lib ddraw.lib dsound.lib dxguid.lib winmm.lib wsock32.lib dinput8.lib /nologo /dll /incremental:no /pdb:"Release/Engine.pdb" /map:"Release/Engine.map" /debug /machine:I386 /out:"Release/Engine.dll" /implib:"Release/Engine.lib"
+.\Release\KAutoMutex.obj
+.\Release\KAviFile.obj
+.\Release\KBitmap.obj
+.\Release\KBitmap16.obj
+.\Release\KBitmapConvert.obj
+.\Release\KBmp2Spr.obj
+.\Release\KBmpFile.obj
+.\Release\KBmpFile24.obj
+.\Release\KCache.obj
+.\Release\KCanvas.obj
+.\Release\KCodec.obj
+.\Release\KCodecLzo.obj
+.\Release\KColors.obj
+.\Release\KDDraw.obj
+.\Release\KDebug.obj
+.\Release\KDError.obj
+.\Release\KDInput.obj
+.\Release\KDrawBase.obj
+.\Release\KDrawBitmap.obj
+.\Release\KDrawBitmap16.obj
+.\Release\KDrawFade.obj
+.\Release\KDrawFont.obj
+.\Release\KDrawSprite.obj
+.\Release\KDrawSpriteAlpha.obj
+.\Release\KDSound.obj
+.\Release\KEicScript.obj
+.\Release\KEicScriptSet.obj
+.\Release\KEngine.obj
+.\Release\KEvent.obj
+.\Release\KFile.obj
+.\Release\KFileCopy.obj
+.\Release\KFileDialog.obj
+.\Release\KFilePath.obj
+.\Release\KFindBinTree.obj
+.\Release\KFont.obj
+.\Release\KGifFile.obj
+.\Release\KGraphics.obj
+.\Release\KHashList.obj
+.\Release\KHashNode.obj
+.\Release\KHashTable.obj
+.\Release\Kime.obj
+.\Release\KIniFile.obj
+.\Release\KJpgFile.obj
+.\Release\KKeyboard.obj
+.\Release\KLinkArray.obj
+.\Release\KList.obj
+.\Release\KLuaScript.obj
+.\Release\KLuaScriptSet.obj
+.\Release\KLubCmpl_Blocker.obj
+.\Release\KMemBase.obj
+.\Release\KMemClass.obj
+.\Release\KMemClass1.obj
+.\Release\KMemManager.obj
+.\Release\KMemStack.obj
+.\Release\KMessage.obj
+.\Release\KMouse.obj
+.\Release\KMp3Music.obj
+.\Release\KMp4Audio.obj
+.\Release\KMp4Movie.obj
+.\Release\KMp4Video.obj
+.\Release\KMpgMusic.obj
+.\Release\KMsgNode.obj
+.\Release\KMusic.obj
+.\Release\KMutex.obj
+.\Release\KNode.obj
+.\Release\KOctree.obj
+.\Release\KOctreeNode.obj
+.\Release\KPakData.obj
+.\Release\KPakFile.obj
+.\Release\KPakList.obj
+.\Release\KPakTool.obj
+.\Release\KPalette.obj
+.\Release\KPcxFile.obj
+.\Release\KPolygon.obj
+.\Release\KPolyRelation.obj
+.\Release\KRandom.obj
+.\Release\KSafeList.obj
+.\Release\KScanDir.obj
+.\Release\KScript.obj
+.\Release\KScriptCache.obj
+.\Release\KScriptList.obj
+.\Release\KScriptSet.obj
+.\Release\KSG_MD5_String.obj
+.\Release\KSG_StringProcess.obj
+.\Release\KSortBinTree.obj
+.\Release\KSortList.obj
+.\Release\KSoundCache.obj
+.\Release\KSprite.obj
+.\Release\KSpriteCache.obj
+.\Release\KSpriteCodec.obj
+.\Release\KSpriteMaker.obj
+.\Release\KStepLuaScript.obj
+.\Release\KStrBase.obj
+.\Release\KStrList.obj
+.\Release\KStrNode.obj
+.\Release\KTabFile.obj
+.\Release\KTabFileCtrl.obj
+.\Release\KTgaFile32.obj
+.\Release\KThread.obj
+.\Release\KTimer.obj
+.\Release\KVideo.obj
+.\Release\KWavCodec.obj
+.\Release\KWavFile.obj
+.\Release\KWavMusic.obj
+.\Release\KWavSound.obj
+.\Release\KWin32.obj
+.\Release\KWin32App.obj
+.\Release\KWin32Wnd.obj
+.\Release\KZipCodec.obj
+.\Release\KZipData.obj
+.\Release\KZipFile.obj
+.\Release\KZipList.obj
+.\Release\md5.obj
+.\Release\stdafx.obj
+.\Release\XPackFile.obj
+.\Release\EDOneTimePad.obj
+.\Release\Text.obj
+.\Release\alloc.obj
+.\Release\io.obj
+.\Release\n2b_99.obj
+.\Release\n2b_d.obj
+.\Release\n2b_ds.obj
+.\Release\n2b_to.obj
+.\Release\n2d_99.obj
+.\Release\n2d_d.obj
+.\Release\n2d_ds.obj
+.\Release\n2d_to.obj
+.\Release\n2e_99.obj
+.\Release\n2e_d.obj
+.\Release\n2e_ds.obj
+.\Release\n2e_to.obj
+.\Release\ucl_crc.obj
+.\Release\ucl_dll.obj
+.\Release\ucl_init.obj
+.\Release\ucl_ptr.obj
+.\Release\ucl_str.obj
+.\Release\ucl_util.obj
+..\..\Lib\release\JpgLib.lib
+..\..\Lib\release\LuaLibDll.lib
+..\..\Lib\release\mp3lib.lib
+]
+Creating command line "link.exe @C:\Users\PC\AppData\Local\Temp\RSP39.tmp"
+<h3>Output Window</h3>
+Compiling...
+Text.cpp
+Linking...
+   Creating library Release/Engine.lib and object Release/Engine.exp
+LINK : warning LNK4098: defaultlib "LIBC" conflicts with use of other libs; use /NODEFAULTLIB:library
+Creating temporary file "C:\Users\PC\AppData\Local\Temp\RSP2DA.bat" with contents
+[
+@echo off
+md ..\..\lib\release
+copy release\engine.lib ..\..\lib\release\engine.lib
+md ..\..\..\bin\client\release\
+copy release\engine.dll ..\..\..\bin\client\engine.dll
+copy release\engine.dll ..\..\..\bin\client\release\engine.dll
+copy release\engine.pdb ..\..\..\bin\client\release\engine.pdb
+copy release\engine.map ..\..\..\bin\client\release\engine.map
+md ..\..\..\bin\server\release\
+copy release\engine.dll ..\..\..\bin\server\engine.dll
+copy release\engine.dll ..\..\..\bin\server\release\engine.dll
+copy release\engine.pdb ..\..\..\bin\server\release\engine.pdb
+copy release\engine.map ..\..\..\bin\server\release\engine.map
+]
+Creating command line "C:\Users\PC\AppData\Local\Temp\RSP2DA.bat"
+
+A subdirectory or file ..\..\lib\release already exists.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\client\release\ already exists.
+The process cannot access the file because it is being used by another process.
+        0 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\server\release\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+Engine.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

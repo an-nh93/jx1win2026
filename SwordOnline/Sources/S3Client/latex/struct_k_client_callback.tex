@@ -1,0 +1,103 @@
+\doxysection{KClient\+Callback Struct Reference}
+\hypertarget{struct_k_client_callback}{}\label{struct_k_client_callback}\index{KClientCallback@{KClientCallback}}
+
+
+{\ttfamily \#include $<$S3\+Client.\+h$>$}
+
+Inheritance diagram for KClient\+Callback\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_k_client_callback}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_k_client_callback_a9343a3c360926fc97f5bb298b0d90fa3}{Core\+Data\+Changed}} (unsigned int u\+Data\+Id, unsigned int u\+Param, int n\+Param)
+\item 
+void \mbox{\hyperlink{struct_k_client_callback_ac2d2c4e5c854ae779b3de6540ef28c36}{Channel\+Message\+Arrival}} (DWORD n\+Channel\+ID, char \texorpdfstring{$\ast$}{*}sz\+Send\+Name, const char \texorpdfstring{$\ast$}{*}p\+Msg\+Buff, unsigned short n\+Msg\+Length, const char \texorpdfstring{$\ast$}{*}p\+Item=0, BYTE bt\+Some\+Flag=0, bool b\+Succ=false)
+\item 
+void \mbox{\hyperlink{struct_k_client_callback_a9c1c5499d3cc47d674c476ef812354b5}{MSNMessage\+Arrival}} (char \texorpdfstring{$\ast$}{*}sz\+Source\+Name, char \texorpdfstring{$\ast$}{*}sz\+Send\+Name, const char \texorpdfstring{$\ast$}{*}p\+Msg\+Buff, unsigned short n\+Msg\+Length, const char \texorpdfstring{$\ast$}{*}p\+Item=0, bool b\+Succ=false)
+\item 
+void \mbox{\hyperlink{struct_k_client_callback_ab1cb3b67ac9c904a4fda7af8f6de917d}{Notify\+Channel\+ID}} (char \texorpdfstring{$\ast$}{*}Channel\+Name, DWORD channelid, BYTE cost)
+\item 
+void \mbox{\hyperlink{struct_k_client_callback_a147450e2f6f4fbf32a2822c2e74ada0f}{Friend\+Invite}} (char \texorpdfstring{$\ast$}{*}role\+Name)
+\item 
+void \mbox{\hyperlink{struct_k_client_callback_a9f07e11c6e7028823f4d856e45e21ffa}{Add\+Friend}} (char \texorpdfstring{$\ast$}{*}role\+Name, BYTE answer)
+\item 
+void \mbox{\hyperlink{struct_k_client_callback_a5f96f926f4f342d46e3ea0ab5b015c21}{Delete\+Friend}} (char \texorpdfstring{$\ast$}{*}role\+Name)
+\item 
+void \mbox{\hyperlink{struct_k_client_callback_a7d0276096a545eddabbcec9d0693ef15}{Friend\+Status}} (char \texorpdfstring{$\ast$}{*}role\+Name, BYTE state)
+\item 
+void \mbox{\hyperlink{struct_k_client_callback_aae903a983755064cf23922c2671fe12c}{Friend\+Info}} (char \texorpdfstring{$\ast$}{*}role\+Name, char \texorpdfstring{$\ast$}{*}unit\+Name, char \texorpdfstring{$\ast$}{*}group\+Name, BYTE state)
+\item 
+void \mbox{\hyperlink{struct_k_client_callback_a37739752f879b65f93ab9af11fa6f7d7}{Add\+People}} (char \texorpdfstring{$\ast$}{*}unit\+Name, char \texorpdfstring{$\ast$}{*}role\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_k_client_callback_a9f07e11c6e7028823f4d856e45e21ffa}\label{struct_k_client_callback_a9f07e11c6e7028823f4d856e45e21ffa} 
+\index{KClientCallback@{KClientCallback}!AddFriend@{AddFriend}}
+\index{AddFriend@{AddFriend}!KClientCallback@{KClientCallback}}
+\doxysubsubsection{\texorpdfstring{AddFriend()}{AddFriend()}}
+{\footnotesize\ttfamily void KClient\+Callback\+::\+Add\+Friend (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{role\+Name,  }\item[{BYTE}]{answer }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_k_client_callback_a37739752f879b65f93ab9af11fa6f7d7}\label{struct_k_client_callback_a37739752f879b65f93ab9af11fa6f7d7} 
+\index{KClientCallback@{KClientCallback}!AddPeople@{AddPeople}}
+\index{AddPeople@{AddPeople}!KClientCallback@{KClientCallback}}
+\doxysubsubsection{\texorpdfstring{AddPeople()}{AddPeople()}}
+{\footnotesize\ttfamily void KClient\+Callback\+::\+Add\+People (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{unit\+Name,  }\item[{char \texorpdfstring{$\ast$}{*}}]{role\+Name }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_k_client_callback_ac2d2c4e5c854ae779b3de6540ef28c36}\label{struct_k_client_callback_ac2d2c4e5c854ae779b3de6540ef28c36} 
+\index{KClientCallback@{KClientCallback}!ChannelMessageArrival@{ChannelMessageArrival}}
+\index{ChannelMessageArrival@{ChannelMessageArrival}!KClientCallback@{KClientCallback}}
+\doxysubsubsection{\texorpdfstring{ChannelMessageArrival()}{ChannelMessageArrival()}}
+{\footnotesize\ttfamily void KClient\+Callback\+::\+Channel\+Message\+Arrival (\begin{DoxyParamCaption}\item[{DWORD}]{n\+Channel\+ID,  }\item[{char \texorpdfstring{$\ast$}{*}}]{sz\+Send\+Name,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{p\+Msg\+Buff,  }\item[{unsigned short}]{n\+Msg\+Length,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{p\+Item = {\ttfamily 0},  }\item[{BYTE}]{bt\+Some\+Flag = {\ttfamily 0},  }\item[{bool}]{b\+Succ = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_k_client_callback_a9343a3c360926fc97f5bb298b0d90fa3}\label{struct_k_client_callback_a9343a3c360926fc97f5bb298b0d90fa3} 
+\index{KClientCallback@{KClientCallback}!CoreDataChanged@{CoreDataChanged}}
+\index{CoreDataChanged@{CoreDataChanged}!KClientCallback@{KClientCallback}}
+\doxysubsubsection{\texorpdfstring{CoreDataChanged()}{CoreDataChanged()}}
+{\footnotesize\ttfamily void KClient\+Callback\+::\+Core\+Data\+Changed (\begin{DoxyParamCaption}\item[{unsigned int}]{u\+Data\+Id,  }\item[{unsigned int}]{u\+Param,  }\item[{int}]{n\+Param }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_k_client_callback_a5f96f926f4f342d46e3ea0ab5b015c21}\label{struct_k_client_callback_a5f96f926f4f342d46e3ea0ab5b015c21} 
+\index{KClientCallback@{KClientCallback}!DeleteFriend@{DeleteFriend}}
+\index{DeleteFriend@{DeleteFriend}!KClientCallback@{KClientCallback}}
+\doxysubsubsection{\texorpdfstring{DeleteFriend()}{DeleteFriend()}}
+{\footnotesize\ttfamily void KClient\+Callback\+::\+Delete\+Friend (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{role\+Name }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_k_client_callback_aae903a983755064cf23922c2671fe12c}\label{struct_k_client_callback_aae903a983755064cf23922c2671fe12c} 
+\index{KClientCallback@{KClientCallback}!FriendInfo@{FriendInfo}}
+\index{FriendInfo@{FriendInfo}!KClientCallback@{KClientCallback}}
+\doxysubsubsection{\texorpdfstring{FriendInfo()}{FriendInfo()}}
+{\footnotesize\ttfamily void KClient\+Callback\+::\+Friend\+Info (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{role\+Name,  }\item[{char \texorpdfstring{$\ast$}{*}}]{unit\+Name,  }\item[{char \texorpdfstring{$\ast$}{*}}]{group\+Name,  }\item[{BYTE}]{state }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_k_client_callback_a147450e2f6f4fbf32a2822c2e74ada0f}\label{struct_k_client_callback_a147450e2f6f4fbf32a2822c2e74ada0f} 
+\index{KClientCallback@{KClientCallback}!FriendInvite@{FriendInvite}}
+\index{FriendInvite@{FriendInvite}!KClientCallback@{KClientCallback}}
+\doxysubsubsection{\texorpdfstring{FriendInvite()}{FriendInvite()}}
+{\footnotesize\ttfamily void KClient\+Callback\+::\+Friend\+Invite (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{role\+Name }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_k_client_callback_a7d0276096a545eddabbcec9d0693ef15}\label{struct_k_client_callback_a7d0276096a545eddabbcec9d0693ef15} 
+\index{KClientCallback@{KClientCallback}!FriendStatus@{FriendStatus}}
+\index{FriendStatus@{FriendStatus}!KClientCallback@{KClientCallback}}
+\doxysubsubsection{\texorpdfstring{FriendStatus()}{FriendStatus()}}
+{\footnotesize\ttfamily void KClient\+Callback\+::\+Friend\+Status (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{role\+Name,  }\item[{BYTE}]{state }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_k_client_callback_a9c1c5499d3cc47d674c476ef812354b5}\label{struct_k_client_callback_a9c1c5499d3cc47d674c476ef812354b5} 
+\index{KClientCallback@{KClientCallback}!MSNMessageArrival@{MSNMessageArrival}}
+\index{MSNMessageArrival@{MSNMessageArrival}!KClientCallback@{KClientCallback}}
+\doxysubsubsection{\texorpdfstring{MSNMessageArrival()}{MSNMessageArrival()}}
+{\footnotesize\ttfamily void KClient\+Callback\+::\+MSNMessage\+Arrival (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{sz\+Source\+Name,  }\item[{char \texorpdfstring{$\ast$}{*}}]{sz\+Send\+Name,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{p\+Msg\+Buff,  }\item[{unsigned short}]{n\+Msg\+Length,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{p\+Item = {\ttfamily 0},  }\item[{bool}]{b\+Succ = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_k_client_callback_ab1cb3b67ac9c904a4fda7af8f6de917d}\label{struct_k_client_callback_ab1cb3b67ac9c904a4fda7af8f6de917d} 
+\index{KClientCallback@{KClientCallback}!NotifyChannelID@{NotifyChannelID}}
+\index{NotifyChannelID@{NotifyChannelID}!KClientCallback@{KClientCallback}}
+\doxysubsubsection{\texorpdfstring{NotifyChannelID()}{NotifyChannelID()}}
+{\footnotesize\ttfamily void KClient\+Callback\+::\+Notify\+Channel\+ID (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{Channel\+Name,  }\item[{DWORD}]{channelid,  }\item[{BYTE}]{cost }\end{DoxyParamCaption})}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s3_client_8h}{S3\+Client.\+h}}\end{DoxyCompactItemize}

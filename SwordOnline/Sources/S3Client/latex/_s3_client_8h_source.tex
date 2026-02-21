@@ -1,0 +1,70 @@
+\doxysection{S3\+Client.\+h}
+\hypertarget{_s3_client_8h_source}{}\label{_s3_client_8h_source}\mbox{\hyperlink{_s3_client_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ S3ClientH}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \ \ \ S3ClientH}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}KEngine.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}KMp3Music.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}../../Core/Src/CoreShell.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <commctrl.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }KInlinePicSink;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_my_app}{KMyApp}}\ :\ \textcolor{keyword}{public}\ KWin32App\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ KMp3Music\ m\_Music;}
+\DoxyCodeLine{00015\ \ \ \ \ KDirectSound\ m\_Sound;}
+\DoxyCodeLine{00016\ \ \ \ \ KTimer\ m\_Timer;}
+\DoxyCodeLine{00017\ \ \ \ \ DWORD\ m\_GameCounter;}
+\DoxyCodeLine{00018\ \ \ \ \ KInlinePicSink\ *m\_pInlinePicSink;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_k_my_app_acfb29ebb4c0231b08144a51022cd32a4}{KMyApp}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ BOOL\ \mbox{\hyperlink{class_k_my_app_a7144ab8729db5ae9924ead3dad12170a}{GameInit}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ BOOL\ \mbox{\hyperlink{class_k_my_app_ac8bc1553997a9a27f0a4b6bb031e32b7}{GameLoop}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ BOOL\ \mbox{\hyperlink{class_k_my_app_a634d8ce07de4a2b762b3944e21e05ac1}{GameExit}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ BOOL\ \mbox{\hyperlink{class_k_my_app_a5a455c05e44551e670ecca14812f520e}{Game\_AntiVMW}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ BOOL\ \mbox{\hyperlink{class_k_my_app_aa5153856cb22c203a8ff35acc5569967}{GameLimitWindown}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_k_my_app_a346d3838f0048619e39178638092a9a7}{HandleInput}}(UINT\ uMsg,\ WPARAM\ wParam,\ LPARAM\ lParam);}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_k_client_callback}{KClientCallback}}\ :\ \textcolor{keyword}{public}\ IClientCallback\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_k_client_callback_a9343a3c360926fc97f5bb298b0d90fa3}{CoreDataChanged}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ uDataId,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ uParam,\ \textcolor{keywordtype}{int}\ nParam);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_k_client_callback_ac2d2c4e5c854ae779b3de6540ef28c36}{ChannelMessageArrival}}(DWORD\ nChannelID,\ \textcolor{keywordtype}{char}\ *szSendName,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *pMsgBuff,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ nMsgLength,}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *pItem\ =\ 0,\ BYTE\ btSomeFlag\ =\ 0,\ \textcolor{keywordtype}{bool}\ bSucc\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_k_client_callback_a9c1c5499d3cc47d674c476ef812354b5}{MSNMessageArrival}}(\textcolor{keywordtype}{char}\ *szSourceName,\ \textcolor{keywordtype}{char}\ *szSendName,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *pMsgBuff,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ nMsgLength,}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *pItem\ =\ 0,\ \textcolor{keywordtype}{bool}\ bSucc\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_k_client_callback_ab1cb3b67ac9c904a4fda7af8f6de917d}{NotifyChannelID}}(\textcolor{keywordtype}{char}\ *ChannelName,\ DWORD\ channelid,\ BYTE\ cost);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_k_client_callback_a147450e2f6f4fbf32a2822c2e74ada0f}{FriendInvite}}(\textcolor{keywordtype}{char}\ *roleName);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_k_client_callback_a9f07e11c6e7028823f4d856e45e21ffa}{AddFriend}}(\textcolor{keywordtype}{char}\ *roleName,\ BYTE\ answer);\ \ \ \ \textcolor{comment}{//添加好友到好友组}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_k_client_callback_a5f96f926f4f342d46e3ea0ab5b015c21}{DeleteFriend}}(\textcolor{keywordtype}{char}\ *roleName);\ \ \ \ \textcolor{comment}{//添加好友到好友组}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_k_client_callback_a7d0276096a545eddabbcec9d0693ef15}{FriendStatus}}(\textcolor{keywordtype}{char}\ *roleName,\ BYTE\ state);\ \ \ \ \textcolor{comment}{//有关系人的状态,找到第一个为止}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_k_client_callback_aae903a983755064cf23922c2671fe12c}{FriendInfo}}(\textcolor{keywordtype}{char}\ *roleName,\ \textcolor{keywordtype}{char}\ *unitName,\ \textcolor{keywordtype}{char}\ *groupName,\ BYTE\ state);\ \ \ \ \textcolor{comment}{//同步关系人数据}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_k_client_callback_a37739752f879b65f93ab9af11fa6f7d7}{AddPeople}}(\textcolor{keywordtype}{char}\ *unitName,\ \textcolor{keywordtype}{char}\ *roleName);\ \ \ \ \textcolor{comment}{//添加关系人到指定组}}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_s3_client_8h_a40b4f437a7ad18885d9cc233a3ff4206}{UpdateGameVersion}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_s3_client_8h_a8bfcf744558df4b33320a2d7ddede653}{HexNumberCheatHack}}(\textcolor{keywordtype}{int}\ limit);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{_s3_client_8h_a99f6297a461e72cce8183593850acd08}{HexStringCheatHack}}(\textcolor{keywordtype}{char}\ hexStr[255]);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_s3_client_8h_a25bd9bf0c5e0ef5451abd85bba785faa}{VersionClient}}();\ \ \ \textcolor{comment}{//son\ fix}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,1885 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Common - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPD65B.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D _WIN32_WINNT=0x0400 /FR"Debug/" /Fp"Debug/Common.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Buffer.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Console.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Event.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\EventSelect.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Exception.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\IniFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\IOBuffer.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\IOCompletionPort.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\KSG_EncodeDecode.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\KSocketClient2.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Library.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Macro.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\ManualResetEvent.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Mutex.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\NodeList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Socket.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\SocketAddress.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\SocketClient.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\SocketServer.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Thread.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\UsesWinsock.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Utils.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Win32Exception.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSPD65B.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPD65C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D _WIN32_WINNT=0x0400 /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\CRC32.C"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSPD65C.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPD65D.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D _WIN32_WINNT=0x0400 /FR"Debug/" /Fp"Debug/Common.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSPD65D.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPD66E.tmp" with contents
+[
+/nologo /out:"Debug\Common.lib" 
+".\Debug\Buffer.obj"
+".\Debug\Console.obj"
+".\Debug\CRC32.OBJ"
+".\Debug\Event.obj"
+".\Debug\EventSelect.obj"
+".\Debug\Exception.obj"
+".\Debug\IniFile.obj"
+".\Debug\IOBuffer.obj"
+".\Debug\IOCompletionPort.obj"
+".\Debug\KSG_EncodeDecode.obj"
+".\Debug\KSocketClient2.obj"
+".\Debug\Library.obj"
+".\Debug\Macro.obj"
+".\Debug\ManualResetEvent.obj"
+".\Debug\Mutex.obj"
+".\Debug\NodeList.obj"
+".\Debug\Socket.obj"
+".\Debug\SocketAddress.obj"
+".\Debug\SocketClient.obj"
+".\Debug\SocketServer.obj"
+".\Debug\stdafx.obj"
+".\Debug\Thread.obj"
+".\Debug\UsesWinsock.obj"
+".\Debug\Utils.obj"
+".\Debug\Win32Exception.obj"
+]
+Creating command line "link.exe -lib @C:\Users\kuetl\AppData\Local\Temp\RSPD66E.tmp"
+<h3>Output Window</h3>
+Compiling...
+stdafx.cpp
+Compiling...
+Buffer.cpp
+Console.cpp
+Event.cpp
+EventSelect.cpp
+Exception.cpp
+IniFile.cpp
+IOBuffer.cpp
+IOCompletionPort.cpp
+KSG_EncodeDecode.cpp
+KSocketClient2.cpp
+Library.cpp
+Macro.cpp
+ManualResetEvent.cpp
+Mutex.cpp
+NodeList.cpp
+Socket.cpp
+SocketAddress.cpp
+SocketClient.cpp
+SocketServer.cpp
+NOTE : --------------------OnlineGameLib [Client] : Announcement--------------------
+NOTE : The lib be used for socket communicate that it is base on
+NOTE : Windows 95 and Windows NT 3.51 and later
+NOTE :
+NOTE : liupeng xishanju.zhuhai.china 2003.1
+NOTE : -----------------------------------------------------------------------------
+Thread.cpp
+NOTE : --------------------OnlineGame [Server] : Announcement--------------------
+NOTE : Developing a truly scalable Winsock Server using IO Completion Ports(IOCP)
+NOTE : But this module depend on the microsoft platform
+NOTE : Requirements :
+NOTE :    * Windows NT/2000/XP: Included in Windows NT 4.0 and later.
+NOTE :    * Windows 95/98/Me: Unsupported.
+NOTE :
+NOTE : liupeng xishanju.zhuhai.china 2003.1
+NOTE : -----------------------------------------------------------------------------
+Generating Code...
+Compiling...
+UsesWinsock.cpp
+Utils.cpp
+Win32Exception.cpp
+Generating Code...
+Compiling...
+CRC32.C
+Creating library...
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPE285.bat" with contents
+[
+@echo off
+md ..\..\..\lib\debug
+md ..\..\..\gameserver
+copy debug\common.lib ..\..\..\lib\debug\common.lib
+copy debug\common.lib ..\gameserver\common.lib
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSPE285.bat"
+
+A subdirectory or file ..\..\..\lib\debug already exists.
+A subdirectory or file ..\..\..\gameserver already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: Core - Win32 Server Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPE3FD.tmp" with contents
+[
+/nologo /MTd /W2 /Gm /GX /Zi /Od /I "..\engine\src" /I "..\engine\include" /I "..\Network" /I "..\..\Headers" /D "_DEBUG" /D "_SERVER" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "CORE_EXPORTS" /FR"ServerDebug/" /Fp"ServerDebug/Core.pch" /Yu"KCore.h" /Fo"ServerDebug/" /Fd"ServerDebug/" /FD /LD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPartnerSkill.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerPartner.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KThiefSkill.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KMissle.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KMissleRes.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KMissleSet.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KSkillList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KSkillManager.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KSkills.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KSkillSpecial.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KFaction.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KGameData.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KNpc.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KNpcAI.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KNpcAttribModify.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KNpcDeathCalcExp.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KNpcFindPath.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KNpcRes.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KNpcResList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KNpcResNode.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KNpcSet.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KNpcTemplate.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayer.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerAI.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerChat.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerChatRoom.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerDBFuns.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerFaction.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerMenuState.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerPK.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerSet.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerTask.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerTeam.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerTong.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KPlayerTrade.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KSprControl.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KTongData.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KBasPropTbl.CPP"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KBuySell.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KInventory.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KItem.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KItemChangeRes.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KItemGenerator.CPP"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KItemList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KItemSet.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KObj.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KObjSet.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KSellItem.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KViewItem.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KCore.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KSubWorld.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KSubWorldSet.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KWeatherMgr.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KRegion.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KWorldMsg.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KMath.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KGMProcess.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KNewProtocolProcess.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KProtocol.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KProtocolProcess.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\ScriptFuns.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KScriptValueSet.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KSortScript.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\src\CoreServerShell.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\Scene\KWeather.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KMagicDesc.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KGMCommand.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KMission.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KTaskFuns.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KOption.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KMapMusic.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\KLadder.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSPE3FD.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPE3FE.tmp" with contents
+[
+/nologo /MTd /W2 /Gm /GX /Zi /Od /I "..\engine\src" /I "..\engine\include" /I "..\Network" /I "..\..\Headers" /D "_DEBUG" /D "_SERVER" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "CORE_EXPORTS" /FR"ServerDebug/" /Fp"ServerDebug/Core.pch" /Yc"KCore.h" /Fo"ServerDebug/" /Fd"ServerDebug/" /FD /LD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Core\Src\stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSPE3FE.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPE3FF.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib lualibdll.lib Ws2_32.lib Winmm.lib Shlwapi.lib /nologo /dll /incremental:no /pdb:"ServerDebug/CoreServer.pdb" /map:"ServerDebug/CoreServer.map" /debug /machine:I386 /nodefaultlib:"libc.lib" /nodefaultlib:"libcmt.lib" /nodefaultlib:"msvcrt.lib" /nodefaultlib:"libcd.lib" /nodefaultlib:"msvcrtd.lib" /out:"ServerDebug\CoreServer.dll" /implib:"ServerDebug/CoreServer.lib" /pdbtype:sept /libpath:"../../lib/" 
+".\ServerDebug\KPartnerSkill.obj"
+".\ServerDebug\KPlayerPartner.obj"
+".\ServerDebug\KThiefSkill.obj"
+".\ServerDebug\KMissle.obj"
+".\ServerDebug\KMissleRes.obj"
+".\ServerDebug\KMissleSet.obj"
+".\ServerDebug\KSkillList.obj"
+".\ServerDebug\KSkillManager.obj"
+".\ServerDebug\KSkills.obj"
+".\ServerDebug\KSkillSpecial.obj"
+".\ServerDebug\KFaction.obj"
+".\ServerDebug\KGameData.obj"
+".\ServerDebug\KNpc.obj"
+".\ServerDebug\KNpcAI.obj"
+".\ServerDebug\KNpcAttribModify.obj"
+".\ServerDebug\KNpcDeathCalcExp.obj"
+".\ServerDebug\KNpcFindPath.obj"
+".\ServerDebug\KNpcRes.obj"
+".\ServerDebug\KNpcResList.obj"
+".\ServerDebug\KNpcResNode.obj"
+".\ServerDebug\KNpcSet.obj"
+".\ServerDebug\KNpcTemplate.obj"
+".\ServerDebug\KPlayer.obj"
+".\ServerDebug\KPlayerAI.obj"
+".\ServerDebug\KPlayerChat.obj"
+".\ServerDebug\KPlayerChatRoom.obj"
+".\ServerDebug\KPlayerDBFuns.obj"
+".\ServerDebug\KPlayerFaction.obj"
+".\ServerDebug\KPlayerMenuState.obj"
+".\ServerDebug\KPlayerPK.obj"
+".\ServerDebug\KPlayerSet.obj"
+".\ServerDebug\KPlayerTask.obj"
+".\ServerDebug\KPlayerTeam.obj"
+".\ServerDebug\KPlayerTong.obj"
+".\ServerDebug\KPlayerTrade.obj"
+".\ServerDebug\KSprControl.obj"
+".\ServerDebug\KTongData.obj"
+".\ServerDebug\KBasPropTbl.obj"
+".\ServerDebug\KBuySell.obj"
+".\ServerDebug\KInventory.obj"
+".\ServerDebug\KItem.obj"
+".\ServerDebug\KItemChangeRes.obj"
+".\ServerDebug\KItemGenerator.obj"
+".\ServerDebug\KItemList.obj"
+".\ServerDebug\KItemSet.obj"
+".\ServerDebug\KObj.obj"
+".\ServerDebug\KObjSet.obj"
+".\ServerDebug\KSellItem.obj"
+".\ServerDebug\KViewItem.obj"
+".\ServerDebug\KCore.obj"
+".\ServerDebug\KSubWorld.obj"
+".\ServerDebug\KSubWorldSet.obj"
+".\ServerDebug\KWeatherMgr.obj"
+".\ServerDebug\KRegion.obj"
+".\ServerDebug\KWorldMsg.obj"
+".\ServerDebug\KMath.obj"
+".\ServerDebug\KGMProcess.obj"
+".\ServerDebug\KNewProtocolProcess.obj"
+".\ServerDebug\KProtocol.obj"
+".\ServerDebug\KProtocolProcess.obj"
+".\ServerDebug\ScriptFuns.obj"
+".\ServerDebug\KScriptValueSet.obj"
+".\ServerDebug\KSortScript.obj"
+".\ServerDebug\CoreServerShell.obj"
+".\ServerDebug\KWeather.obj"
+".\ServerDebug\KMagicDesc.obj"
+".\ServerDebug\KGMCommand.obj"
+".\ServerDebug\KMission.obj"
+".\ServerDebug\KTaskFuns.obj"
+".\ServerDebug\KOption.obj"
+".\ServerDebug\KMapMusic.obj"
+".\ServerDebug\KLadder.obj"
+".\ServerDebug\stdafx.obj"
+"..\..\Lib\debug\engine.lib"
+"..\..\Lib\debug\common.lib"
+".\Src\USBKey\EP1KDL20.LIB"
+".\Src\USBKey\EpsForJoLib.lib"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSPE3FF.tmp"
+<h3>Output Window</h3>
+Compiling...
+stdafx.cpp
+Compiling...
+KPartnerSkill.cpp
+KPlayerPartner.cpp
+KThiefSkill.cpp
+KMissle.cpp
+KMissleRes.cpp
+KMissleSet.cpp
+KSkillList.cpp
+KSkillManager.cpp
+KSkills.cpp
+KSkillSpecial.cpp
+KFaction.cpp
+KGameData.cpp
+KNpc.cpp
+KNpcAI.cpp
+KNpcAttribModify.cpp
+KNpcDeathCalcExp.cpp
+KNpcFindPath.cpp
+KNpcRes.cpp
+KNpcResList.cpp
+KNpcResNode.cpp
+Generating Code...
+Compiling...
+KNpcSet.cpp
+KNpcTemplate.cpp
+KPlayer.cpp
+KPlayerAI.cpp
+KPlayerChat.cpp
+KPlayerChatRoom.cpp
+KPlayerDBFuns.cpp
+KPlayerFaction.cpp
+KPlayerMenuState.cpp
+KPlayerPK.cpp
+KPlayerSet.cpp
+KPlayerTask.cpp
+KPlayerTeam.cpp
+KPlayerTong.cpp
+KPlayerTrade.cpp
+KSprControl.cpp
+KTongData.cpp
+KBasPropTbl.CPP
+KBuySell.cpp
+KInventory.cpp
+Generating Code...
+Compiling...
+KItem.cpp
+KItemChangeRes.cpp
+KItemGenerator.CPP
+KItemList.cpp
+KItemSet.cpp
+KObj.cpp
+KObjSet.cpp
+KSellItem.cpp
+KViewItem.cpp
+KCore.cpp
+KSubWorld.cpp
+KSubWorldSet.cpp
+KWeatherMgr.cpp
+KRegion.cpp
+KWorldMsg.cpp
+KMath.cpp
+KGMProcess.cpp
+KNewProtocolProcess.cpp
+KProtocol.cpp
+KProtocolProcess.cpp
+Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\utility(21) : warning C4786: 'std::pair<std::_Tree<unsigned short,std::pair<unsigned short const ,void (__cdecl*)(IClient *,unsigned long,unsigned long,int,unsigned char *,int)>,std::map<unsigned short,void (__cdecl*)(IClient *,unsigned long,unsigned long,int,unsigned char *,int),std::less<unsigned short>,std::allocator<void (__cdecl*)(IClient *,unsigned long,unsigned long,int,unsigned char *,int)> >::_Kfn,std::less<unsigned short>,std::allocator<void (__cdecl*)(IClient *,unsigned long,unsigned long,int,unsigned char *,int)> >::iterator,bool>::pair<std::_Tree<unsigned short,std::pair<unsigned short const ,void (__cdecl*)(IClient *,unsigned long,unsigned long,int,unsigned char *,int)>,std::map<unsigned short,void (__cdecl*)(IClient *,unsigned long,unsigned long,int,unsigned char *,int),std::less<unsigned short>,std::allocator<void (__cdecl*)(IClient *,unsigned long,unsigned long,int,unsigned char *,int)> >::_Kfn,std::less<unsigned short>,std::allocator<void (__cdecl*)(IClient *,unsigned long,unsigned long,int,unsigned char *,int)> >::iterator,bool>' : identifier was truncated to '255' characters in the debug information
+Compiling...
+ScriptFuns.cpp
+KScriptValueSet.cpp
+KSortScript.cpp
+CoreServerShell.cpp
+KWeather.cpp
+KMagicDesc.cpp
+KGMCommand.cpp
+KMission.cpp
+KTaskFuns.cpp
+KOption.cpp
+KMapMusic.cpp
+KLadder.cpp
+Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\list(131) : warning C4786: 'std::list<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::list<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >' : identifier was truncated to '255' characters in the debug information
+C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\list(153) : warning C4786: 'std::list<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~list<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >' : identifier was truncated to '255' characters in the debug information
+Linking...
+   Creating library ServerDebug/CoreServer.lib and object ServerDebug/CoreServer.exp
+ServerDebug\CoreServer.dll : warning LNK4084: total image size 769867776 exceeds max (268435456); image may not run
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPFAE3.bat" with contents
+[
+@echo off
+md ..\..\..\bin\server\debug
+md ..\..\lib\debug
+copy ServerDebug\CoreServer.map ..\..\..\bin\server\Coreserver.map
+copy ServerDebug\CoreServer.pdb ..\..\..\bin\server\Coreserver.pdb
+copy ServerDebug\CoreServer.dll ..\..\..\bin\server\Coreserver.dll
+copy ServerDebug\CoreServer.map ..\..\..\bin\server\debug\Coreserver.map
+copy ServerDebug\CoreServer.pdb ..\..\..\bin\server\debug\Coreserver.pdb
+copy ServerDebug\CoreServer.dll ..\..\..\bin\server\debug\Coreserver.dll
+copy ServerDebug\CoreServer.lib ..\..\lib\debug\CoreServer.lib
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSPFAE3.bat"
+
+A subdirectory or file ..\..\..\bin\server\debug already exists.
+A subdirectory or file ..\..\lib\debug already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: Engine - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPFE01.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /I "include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ENGINE_EXPORTS" /D "USE_STANDALONE_SPR" /D WINVER=0x0500 /FR"Debug/" /Fp"Debug/Engine.pch" /Yu"KWin32.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KAutoMutex.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KAviFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KBitmap.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KBitmap16.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KBitmapConvert.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KBmp2Spr.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KBmpFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KBmpFile24.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KCache.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KCanvas.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KCodec.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KCodecLzo.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KColors.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KDDraw.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KDebug.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KDError.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KDInput.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KDrawBase.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KDrawBitmap.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KDrawBitmap16.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KDrawFade.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KDrawFont.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KDrawSprite.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KDrawSpriteAlpha.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KDSound.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KEicScript.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KEicScriptSet.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KEngine.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KEvent.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KFileCopy.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KFileDialog.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KFilePath.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KFindBinTree.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KFont.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KGifFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KGraphics.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KHashList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KHashNode.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KHashTable.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\Kime.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KIniFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KJpgFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KKeyboard.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KLinkArray.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KLuaScript.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KLuaScriptSet.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KLubCmpl_Blocker.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMemBase.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMemClass.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMemClass1.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMemManager.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMemStack.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMessage.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMouse.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMp3Music.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMp4Audio.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMp4Movie.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMp4Video.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMpgMusic.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMsgNode.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMusic.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KMutex.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KNode.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KOctree.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KOctreeNode.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KPakData.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KPakFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KPakList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KPakTool.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KPalette.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KPcxFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KPolygon.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KPolyRelation.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KRandom.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KSafeList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KScanDir.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KScript.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KScriptCache.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KScriptList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KScriptSet.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KSG_MD5_String.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KSG_StringProcess.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KSortBinTree.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KSortList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KSoundCache.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KSprite.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KSpriteCache.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KSpriteCodec.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KSpriteMaker.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KStepLuaScript.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KStrBase.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KStrList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KStrNode.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KTabFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KTabFileCtrl.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KTgaFile32.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KThread.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KTimer.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KVideo.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KWavCodec.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KWavFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KWavMusic.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KWavSound.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KWin32.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KWin32App.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KWin32Wnd.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KZipCodec.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KZipData.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KZipFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\KZipList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\md5.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\XPackFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\Cryptography\EDOneTimePad.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\Text.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSPFE01.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPFE02.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /I "include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ENGINE_EXPORTS" /D "USE_STANDALONE_SPR" /D WINVER=0x0500 /FR"Debug/" /Fp"Debug/Engine.pch" /Yc"kwin32.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSPFE02.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPFE03.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /I "include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ENGINE_EXPORTS" /D "USE_STANDALONE_SPR" /D WINVER=0x0500 /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\alloc.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\io.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\n2b_99.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\n2b_d.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\n2b_ds.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\n2b_to.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\n2d_99.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\n2d_d.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\n2d_ds.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\n2d_to.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\n2e_99.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\n2e_d.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\n2e_ds.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\n2e_to.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\ucl_crc.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\ucl_dll.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\ucl_init.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\ucl_ptr.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\ucl_str.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Src\ucl\ucl_util.c"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSPFE03.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPFE04.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib comdlg32.lib ddraw.lib dsound.lib dxguid.lib winmm.lib wsock32.lib dinput8.lib /nologo /dll /incremental:no /pdb:"Debug/Engine.pdb" /map:"Debug/Engine.map" /debug /machine:I386 /out:"Debug/Engine.dll" /implib:"Debug/Engine.lib" /pdbtype:sept 
+".\Debug\KAutoMutex.obj"
+".\Debug\KAviFile.obj"
+".\Debug\KBitmap.obj"
+".\Debug\KBitmap16.obj"
+".\Debug\KBitmapConvert.obj"
+".\Debug\KBmp2Spr.obj"
+".\Debug\KBmpFile.obj"
+".\Debug\KBmpFile24.obj"
+".\Debug\KCache.obj"
+".\Debug\KCanvas.obj"
+".\Debug\KCodec.obj"
+".\Debug\KCodecLzo.obj"
+".\Debug\KColors.obj"
+".\Debug\KDDraw.obj"
+".\Debug\KDebug.obj"
+".\Debug\KDError.obj"
+".\Debug\KDInput.obj"
+".\Debug\KDrawBase.obj"
+".\Debug\KDrawBitmap.obj"
+".\Debug\KDrawBitmap16.obj"
+".\Debug\KDrawFade.obj"
+".\Debug\KDrawFont.obj"
+".\Debug\KDrawSprite.obj"
+".\Debug\KDrawSpriteAlpha.obj"
+".\Debug\KDSound.obj"
+".\Debug\KEicScript.obj"
+".\Debug\KEicScriptSet.obj"
+".\Debug\KEngine.obj"
+".\Debug\KEvent.obj"
+".\Debug\KFile.obj"
+".\Debug\KFileCopy.obj"
+".\Debug\KFileDialog.obj"
+".\Debug\KFilePath.obj"
+".\Debug\KFindBinTree.obj"
+".\Debug\KFont.obj"
+".\Debug\KGifFile.obj"
+".\Debug\KGraphics.obj"
+".\Debug\KHashList.obj"
+".\Debug\KHashNode.obj"
+".\Debug\KHashTable.obj"
+".\Debug\Kime.obj"
+".\Debug\KIniFile.obj"
+".\Debug\KJpgFile.obj"
+".\Debug\KKeyboard.obj"
+".\Debug\KLinkArray.obj"
+".\Debug\KList.obj"
+".\Debug\KLuaScript.obj"
+".\Debug\KLuaScriptSet.obj"
+".\Debug\KLubCmpl_Blocker.obj"
+".\Debug\KMemBase.obj"
+".\Debug\KMemClass.obj"
+".\Debug\KMemClass1.obj"
+".\Debug\KMemManager.obj"
+".\Debug\KMemStack.obj"
+".\Debug\KMessage.obj"
+".\Debug\KMouse.obj"
+".\Debug\KMp3Music.obj"
+".\Debug\KMp4Audio.obj"
+".\Debug\KMp4Movie.obj"
+".\Debug\KMp4Video.obj"
+".\Debug\KMpgMusic.obj"
+".\Debug\KMsgNode.obj"
+".\Debug\KMusic.obj"
+".\Debug\KMutex.obj"
+".\Debug\KNode.obj"
+".\Debug\KOctree.obj"
+".\Debug\KOctreeNode.obj"
+".\Debug\KPakData.obj"
+".\Debug\KPakFile.obj"
+".\Debug\KPakList.obj"
+".\Debug\KPakTool.obj"
+".\Debug\KPalette.obj"
+".\Debug\KPcxFile.obj"
+".\Debug\KPolygon.obj"
+".\Debug\KPolyRelation.obj"
+".\Debug\KRandom.obj"
+".\Debug\KSafeList.obj"
+".\Debug\KScanDir.obj"
+".\Debug\KScript.obj"
+".\Debug\KScriptCache.obj"
+".\Debug\KScriptList.obj"
+".\Debug\KScriptSet.obj"
+".\Debug\KSG_MD5_String.obj"
+".\Debug\KSG_StringProcess.obj"
+".\Debug\KSortBinTree.obj"
+".\Debug\KSortList.obj"
+".\Debug\KSoundCache.obj"
+".\Debug\KSprite.obj"
+".\Debug\KSpriteCache.obj"
+".\Debug\KSpriteCodec.obj"
+".\Debug\KSpriteMaker.obj"
+".\Debug\KStepLuaScript.obj"
+".\Debug\KStrBase.obj"
+".\Debug\KStrList.obj"
+".\Debug\KStrNode.obj"
+".\Debug\KTabFile.obj"
+".\Debug\KTabFileCtrl.obj"
+".\Debug\KTgaFile32.obj"
+".\Debug\KThread.obj"
+".\Debug\KTimer.obj"
+".\Debug\KVideo.obj"
+".\Debug\KWavCodec.obj"
+".\Debug\KWavFile.obj"
+".\Debug\KWavMusic.obj"
+".\Debug\KWavSound.obj"
+".\Debug\KWin32.obj"
+".\Debug\KWin32App.obj"
+".\Debug\KWin32Wnd.obj"
+".\Debug\KZipCodec.obj"
+".\Debug\KZipData.obj"
+".\Debug\KZipFile.obj"
+".\Debug\KZipList.obj"
+".\Debug\md5.obj"
+".\Debug\stdafx.obj"
+".\Debug\XPackFile.obj"
+".\Debug\EDOneTimePad.obj"
+".\Debug\Text.obj"
+".\Debug\alloc.obj"
+".\Debug\io.obj"
+".\Debug\n2b_99.obj"
+".\Debug\n2b_d.obj"
+".\Debug\n2b_ds.obj"
+".\Debug\n2b_to.obj"
+".\Debug\n2d_99.obj"
+".\Debug\n2d_d.obj"
+".\Debug\n2d_ds.obj"
+".\Debug\n2d_to.obj"
+".\Debug\n2e_99.obj"
+".\Debug\n2e_d.obj"
+".\Debug\n2e_ds.obj"
+".\Debug\n2e_to.obj"
+".\Debug\ucl_crc.obj"
+".\Debug\ucl_dll.obj"
+".\Debug\ucl_init.obj"
+".\Debug\ucl_ptr.obj"
+".\Debug\ucl_str.obj"
+".\Debug\ucl_util.obj"
+"..\..\Lib\debug\JpgLib.lib"
+"..\..\Lib\debug\LuaLibDll.lib"
+"..\..\Lib\debug\mp3lib.lib"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSPFE04.tmp"
+<h3>Output Window</h3>
+Compiling...
+stdafx.cpp
+
+NOTE: WINVER has been defined as 0x0500 or greater which enables
+Windows NT 5.0 and Windows 98 features. When these headers were released,
+Windows NT 5.0 beta 1 and Windows 98 beta 2.1 were the current versions.
+
+For this release when WINVER is defined as 0x0500 or greater, you can only
+build beta or test applications.  To build a retail application,
+set WINVER to 0x0400 or visit http://www.microsoft.com/msdn/sdk
+to see if retail Windows NT 5.0 or Windows 98 headers are available.
+
+See the SDK release notes for more information.
+
+Compiling...
+KAutoMutex.cpp
+KAviFile.cpp
+KBitmap.cpp
+KBitmap16.cpp
+KBitmapConvert.cpp
+KBmp2Spr.cpp
+KBmpFile.cpp
+KBmpFile24.cpp
+KCache.cpp
+KCanvas.cpp
+KCodec.cpp
+KCodecLzo.cpp
+KColors.cpp
+KDDraw.cpp
+KDebug.cpp
+KDError.cpp
+KDInput.cpp
+KDrawBase.cpp
+KDrawBitmap.cpp
+KDrawBitmap16.cpp
+Generating Code...
+Compiling...
+KDrawFade.cpp
+KDrawFont.cpp
+KDrawSprite.cpp
+KDrawSpriteAlpha.cpp
+KDSound.cpp
+KEicScript.cpp
+KEicScriptSet.cpp
+KEngine.cpp
+KEvent.cpp
+KFile.cpp
+KFileCopy.cpp
+KFileDialog.cpp
+KFilePath.cpp
+KFindBinTree.cpp
+KFont.cpp
+KGifFile.cpp
+KGraphics.cpp
+KHashList.cpp
+KHashNode.cpp
+KHashTable.cpp
+Generating Code...
+Compiling...
+Kime.cpp
+KIniFile.cpp
+KJpgFile.cpp
+KKeyboard.cpp
+KLinkArray.cpp
+KList.cpp
+KLuaScript.cpp
+KLuaScriptSet.cpp
+KLubCmpl_Blocker.cpp
+KMemBase.cpp
+KMemClass.cpp
+KMemClass1.cpp
+KMemManager.cpp
+KMemStack.cpp
+KMessage.cpp
+KMouse.cpp
+KMp3Music.cpp
+KMp4Audio.cpp
+KMp4Movie.cpp
+KMp4Video.cpp
+Generating Code...
+Compiling...
+KMpgMusic.cpp
+KMsgNode.cpp
+KMusic.cpp
+KMutex.cpp
+KNode.cpp
+KOctree.cpp
+KOctreeNode.cpp
+KPakData.cpp
+KPakFile.cpp
+KPakList.cpp
+KPakTool.cpp
+KPalette.cpp
+KPcxFile.cpp
+KPolygon.cpp
+KPolyRelation.cpp
+KRandom.cpp
+KSafeList.cpp
+KScanDir.cpp
+KScript.cpp
+KScriptCache.cpp
+Generating Code...
+Compiling...
+KScriptList.cpp
+KScriptSet.cpp
+KSG_MD5_String.cpp
+KSG_StringProcess.cpp
+KSortBinTree.cpp
+KSortList.cpp
+KSoundCache.cpp
+KSprite.cpp
+KSpriteCache.cpp
+KSpriteCodec.cpp
+KSpriteMaker.cpp
+KStepLuaScript.cpp
+KStrBase.cpp
+KStrList.cpp
+KStrNode.cpp
+KTabFile.cpp
+KTabFileCtrl.cpp
+KTgaFile32.cpp
+KThread.cpp
+KTimer.cpp
+Generating Code...
+Compiling...
+KVideo.cpp
+KWavCodec.cpp
+KWavFile.cpp
+KWavMusic.cpp
+KWavSound.cpp
+KWin32.cpp
+KWin32App.cpp
+KWin32Wnd.cpp
+KZipCodec.cpp
+KZipData.cpp
+KZipFile.cpp
+KZipList.cpp
+md5.cpp
+XPackFile.cpp
+EDOneTimePad.cpp
+Text.cpp
+Generating Code...
+Compiling...
+alloc.c
+io.c
+n2b_99.c
+n2b_d.c
+n2b_ds.c
+n2b_to.c
+n2d_99.c
+n2d_d.c
+n2d_ds.c
+n2d_to.c
+n2e_99.c
+n2e_d.c
+n2e_ds.c
+n2e_to.c
+ucl_crc.c
+ucl_dll.c
+ucl_init.c
+ucl_ptr.c
+ucl_str.c
+ucl_util.c
+Generating Code...
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+   Creating library Debug/Engine.lib and object Debug/Engine.exp
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPAF5.bat" with contents
+[
+@echo off
+md ..\..\lib\debug
+copy debug\engine.lib ..\..\lib\debug\engine.lib
+md ..\..\..\bin\client\debug\
+copy debug\engine.dll ..\..\..\bin\client\engine.dll
+copy debug\engine.dll ..\..\..\bin\client\debug\engine.dll
+md ..\..\..\bin\server\debug\
+copy debug\engine.dll ..\..\..\bin\server\engine.dll
+copy debug\engine.dll ..\..\..\bin\server\debug\engine.dll
+md ..\..\..\bin\multiserver\debug\
+copy debug\engine.dll ..\..\..\bin\multiserver\engine.dll
+copy debug\engine.dll ..\..\..\bin\multiserver\debug\engine.dll
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSPAF5.bat"
+
+A subdirectory or file ..\..\lib\debug already exists.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\client\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\server\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\multiserver\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: ExpandPackage - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPC9C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "EXPANDPACKAGE_EXPORTS" /Fp"Debug/ExpandPackage.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\BlockSource.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\DataPointFromStream.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\DataSource.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\ExpandPackage.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\Interval.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\Package.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\PackageFileHead.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSPC9C.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPC9D.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "EXPANDPACKAGE_EXPORTS" /Fp"Debug/ExpandPackage.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSPC9D.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPC9E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/ExpandPackage.pdb" /debug /machine:I386 /def:".\ExpandPackage.def" /out:"Debug/ExpandPackage.dll" /implib:"Debug/ExpandPackage.lib" /pdbtype:sept 
+".\Debug\BlockSource.obj"
+".\Debug\DataPointFromStream.obj"
+".\Debug\DataSource.obj"
+".\Debug\ExpandPackage.obj"
+".\Debug\Interval.obj"
+".\Debug\Package.obj"
+".\Debug\PackageFileHead.obj"
+".\Debug\StdAfx.obj"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSPC9E.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+BlockSource.cpp
+DataPointFromStream.cpp
+DataSource.cpp
+ExpandPackage.cpp
+Interval.cpp
+Package.cpp
+PackageFileHead.cpp
+Generating Code...
+Linking...
+   Creating library Debug/ExpandPackage.lib and object Debug/ExpandPackage.exp
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP1039.bat" with contents
+[
+@echo off
+copy debug\ExpandPackage.dll ..\..\..\bin\Client\ExpandPackage.dll
+copy debug\ExpandPackage.dll ..\..\..\bin\Client\debug\ExpandPackage.dll
+copy debug\ExpandPackage.dll ..\..\..\bin\server\ExpandPackage.dll
+copy debug\ExpandPackage.dll ..\..\..\bin\server\debug\ExpandPackage.dll
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSP1039.bat"
+
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: ExpandPackageStaticLib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP11C1.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/ExpandPackageStaticLib.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\BlockSource.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\DataPointFromStream.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\DataSource.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\ExpandPackage.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\Interval.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\Package.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\PackageFileHead.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSP11C1.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP11C2.tmp" with contents
+[
+/nologo /out:"Debug\ExpandPackageStaticLib.lib" 
+".\Debug\BlockSource.obj"
+".\Debug\DataPointFromStream.obj"
+".\Debug\DataSource.obj"
+".\Debug\ExpandPackage.obj"
+".\Debug\Interval.obj"
+".\Debug\Package.obj"
+".\Debug\PackageFileHead.obj"
+".\Debug\StdAfx.obj"
+]
+Creating command line "link.exe -lib @C:\Users\kuetl\AppData\Local\Temp\RSP11C2.tmp"
+<h3>Output Window</h3>
+Compiling...
+BlockSource.cpp
+DataPointFromStream.cpp
+DataSource.cpp
+ExpandPackage.cpp
+Interval.cpp
+Package.cpp
+PackageFileHead.cpp
+StdAfx.cpp
+Creating library...
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP17BE.bat" with contents
+[
+@echo off
+copy Debug\ExpandPackageStaticLib.lib ..\..\lib\debug\ExpandPackageStaticLib.lib
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSP17BE.bat"
+
+        1 file(s) copied.
+<h3>
+--------------------Configuration: FilterText - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP1926.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "FILTERTEXT_EXPORTS" /Fp"Debug/FilterText.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\FilterText\FilterText.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\FilterText\Regexp.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSP1926.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP1927.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "FILTERTEXT_EXPORTS" /Fp"Debug/FilterText.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\FilterText\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSP1927.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP1928.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/FilterText.pdb" /debug /machine:I386 /out:"Debug/FilterText.dll" /implib:"Debug/FilterText.lib" /pdbtype:sept 
+".\Debug\FilterText.obj"
+".\Debug\Regexp.obj"
+".\Debug\StdAfx.obj"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSP1928.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+FilterText.cpp
+Regexp.cpp
+Generating Code...
+Linking...
+   Creating library Debug/FilterText.lib and object Debug/FilterText.exp
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP1C37.bat" with contents
+[
+@echo off
+md ..\..\..\bin\multiserver\debug
+copy debug\FilterText.dll ..\..\..\bin\multiserver\FilterText.dll
+copy debug\FilterText.dll ..\..\..\bin\multiserver\debug\FilterText.dll
+md ..\..\..\bin\server\debug
+copy debug\FilterText.dll ..\..\..\bin\server\FilterText.dll
+copy debug\FilterText.dll ..\..\..\bin\server\debug\FilterText.dll
+md ..\..\..\bin\client\debug
+copy debug\FilterText.dll ..\..\..\bin\client\FilterText.dll
+copy debug\FilterText.dll ..\..\..\bin\client\debug\FilterText.dll
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSP1C37.bat"
+
+A subdirectory or file ..\..\..\bin\multiserver\debug already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\server\debug already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\client\debug already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: FilterText_StaticLib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP1D9F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "FILTERTEXT_STATICLIB" /Fp"FilterText_StaticLib___Win32_Debug/FilterText_StaticLib.pch" /YX /Fo"FilterText_StaticLib___Win32_Debug/" /Fd"FilterText_StaticLib___Win32_Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\FilterText\FilterText.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\FilterText\Regexp.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSP1D9F.tmp" 
+Creating command line "link.exe -lib /nologo /out:"FilterText_StaticLib___Win32_Debug\FilterText_StaticLib.lib"  ".\FilterText_StaticLib___Win32_Debug\FilterText.obj" ".\FilterText_StaticLib___Win32_Debug\Regexp.obj" "
+<h3>Output Window</h3>
+Compiling...
+FilterText.cpp
+Regexp.cpp
+Creating library...
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP20EC.bat" with contents
+[
+@echo off
+md ..\..\lib\debug
+copy FilterText_StaticLib___Win32_Debug\FilterText_StaticLib.lib ..\..\lib\debug\FilterText_StaticLib.lib
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSP20EC.bat"
+
+A subdirectory or file ..\..\lib\debug already exists.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: LuaLibDll - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP21E7.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LUALIBDLL_EXPORTS" /Fp"Debug/LuaLibDll.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lapi.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lcode.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\ldebug.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\ldo.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lfunc.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lgc.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\llex.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lmem.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lobject.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lparser.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lstate.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lstring.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\ltable.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\ltests.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\ltm.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lua.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\LuaExtend.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lundump.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lvm.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\lzio.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\baselib\lauxlib.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\baselib\lbaselib.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\baselib\ldblib.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\baselib\liolib.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\baselib\lmathlib.c"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\src\baselib\lstrlib.c"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSP21E7.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP21E8.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/LuaLibDll.pdb" /debug /machine:I386 /out:"Debug/LuaLibDll.dll" /implib:"Debug/LuaLibDll.lib" /pdbtype:sept 
+".\Debug\lapi.obj"
+".\Debug\lcode.obj"
+".\Debug\ldebug.obj"
+".\Debug\ldo.obj"
+".\Debug\lfunc.obj"
+".\Debug\lgc.obj"
+".\Debug\llex.obj"
+".\Debug\lmem.obj"
+".\Debug\lobject.obj"
+".\Debug\lparser.obj"
+".\Debug\lstate.obj"
+".\Debug\lstring.obj"
+".\Debug\ltable.obj"
+".\Debug\ltests.obj"
+".\Debug\ltm.obj"
+".\Debug\lua.obj"
+".\Debug\LuaExtend.obj"
+".\Debug\lundump.obj"
+".\Debug\lvm.obj"
+".\Debug\lzio.obj"
+".\Debug\lauxlib.obj"
+".\Debug\lbaselib.obj"
+".\Debug\ldblib.obj"
+".\Debug\liolib.obj"
+".\Debug\lmathlib.obj"
+".\Debug\lstrlib.obj"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSP21E8.tmp"
+<h3>Output Window</h3>
+Compiling...
+lapi.c
+Create LUA dllexport
+lcode.c
+Create LUA dllexport
+ldebug.c
+Create LUA dllexport
+ldo.c
+Create LUA dllexport
+lfunc.c
+Create LUA dllexport
+lgc.c
+Create LUA dllexport
+llex.c
+Create LUA dllexport
+lmem.c
+Create LUA dllexport
+lobject.c
+Create LUA dllexport
+lparser.c
+Create LUA dllexport
+lstate.c
+Create LUA dllexport
+lstring.c
+Create LUA dllexport
+ltable.c
+Create LUA dllexport
+ltests.c
+Create LUA dllexport
+ltm.c
+Create LUA dllexport
+lua.c
+Create LUA dllexport
+LuaExtend.c
+Create LUA dllexport
+lundump.c
+Create LUA dllexport
+lvm.c
+Create LUA dllexport
+lzio.c
+Create LUA dllexport
+lauxlib.c
+Create LUA dllexport
+lbaselib.c
+Create LUA dllexport
+ldblib.c
+Create LUA dllexport
+liolib.c
+Create LUA dllexport
+lmathlib.c
+Create LUA dllexport
+lstrlib.c
+Create LUA dllexport
+Linking...
+   Creating library Debug/LuaLibDll.lib and object Debug/LuaLibDll.exp
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP2AB3.bat" with contents
+[
+@echo off
+copy   debug\lualibdll.lib   ..\..\..\Lib\lualibdll.lib
+copy   debug\lualibdll.dll   ..\..\..\Lib\lualibdll.dll
+md   ..\..\..\..\bin\client\debug\
+copy   debug\lualibdll.dll   ..\..\..\..\bin\client\LuaLibDll.dll
+copy   debug\lualibdll.dll   ..\..\..\..\bin\client\debug\LuaLibDll.dll
+md   ..\..\..\..\bin\server\debug\
+copy   debug\lualibdll.dll   ..\..\..\..\bin\server\LuaLibDll.dll
+copy   debug\lualibdll.dll   ..\..\..\..\bin\server\debug\LuaLibDll.dll
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSP2AB3.bat"
+
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\..\bin\client\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\..\bin\server\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: Rainbow - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP2C2B.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Common" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "RAINBOW_EXPORTS" /Fp"Debug/Rainbow.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Rainbow\IClient.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Rainbow\Rainbow.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Rainbow\ClientStage.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSP2C2B.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP2C2C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/Rainbow.pdb" /map:"Debug/Rainbow.map" /debug /machine:I386 /def:".\Rainbow.def" /out:"Debug/Rainbow.dll" /implib:"Debug/Rainbow.lib" /pdbtype:sept 
+".\Debug\IClient.obj"
+".\Debug\Rainbow.obj"
+".\Debug\ClientStage.obj"
+"..\..\..\Lib\debug\common.lib"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSP2C2C.tmp"
+<h3>Output Window</h3>
+Compiling...
+IClient.cpp
+Rainbow.cpp
+* ATTENTION : PLEASE USE IT IN ANSI SETTING *
+ClientStage.cpp
+Linking...
+   Creating library Debug/Rainbow.lib and object Debug/Rainbow.exp
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP2F4A.bat" with contents
+[
+@echo off
+md ..\..\..\bin\client\debug\
+copy debug\Rainbow.dll ..\..\..\..\bin\client\Rainbow.dll
+copy debug\Rainbow.dll ..\..\..\..\bin\client\debug\Rainbow.dll
+md ..\..\..\bin\server\debug\
+copy debug\Rainbow.dll ..\..\..\..\bin\server\Rainbow.dll
+copy debug\Rainbow.dll ..\..\..\..\bin\server\debug\Rainbow.dll
+md ..\..\..\bin\multiserver\debug\
+copy debug\Rainbow.dll ..\..\..\..\bin\multiserver\Rainbow.dll
+copy debug\Rainbow.dll ..\..\..\..\bin\multiserver\debug\Rainbow.dll
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSP2F4A.bat"
+
+A subdirectory or file ..\..\..\bin\client\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\server\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\multiserver\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: Represent2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP30B2.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "REPRESENT2_EXPORTS" /Fp"Debug/Represent2.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\Represent2\KImageStore2.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\iRepresent\RepresentUtility.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\Represent2\KRepresentShell2.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\iRepresent\Font\KFont2.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\iRepresent\Font\KFontData.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\iRepresent\Text\TextProcess.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\iRepresent\Image\ImageOperation.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSP30B2.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP30B3.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib GdiPlus.lib /nologo /dll /incremental:no /pdb:"Debug/Represent2.pdb" /map:"Debug/Represent2.map" /debug /machine:I386 /out:"Debug/Represent2.dll" /implib:"../../../lib/Represent.lib" /pdbtype:sept 
+".\Debug\KImageStore2.obj"
+".\Debug\RepresentUtility.obj"
+".\Debug\KRepresentShell2.obj"
+".\Debug\KFont2.obj"
+".\Debug\KFontData.obj"
+".\Debug\TextProcess.obj"
+".\Debug\ImageOperation.obj"
+"..\..\..\Lib\debug\engine.lib"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSP30B3.tmp"
+<h3>Output Window</h3>
+Compiling...
+KImageStore2.cpp
+RepresentUtility.cpp
+KRepresentShell2.cpp
+KFont2.cpp
+KFontData.cpp
+TextProcess.cpp
+ImageOperation.cpp
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+   Creating library ../../../lib/Represent.lib and object ../../../lib/Represent.exp
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP3623.bat" with contents
+[
+@echo off
+md ..\..\..\bin\client\debug\
+copy Debug\Represent2.dll ..\..\..\..\bin\client\Represent2.dll
+copy Debug\Represent2.dll ..\..\..\..\bin\client\debug\Represent2.dll
+md ..\..\..\bin\server\debug\
+copy Debug\Represent2.dll ..\..\..\..\bin\server\Represent2.dll
+copy Debug\Represent2.dll ..\..\..\..\bin\server\debug\Represent2.dll
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSP3623.bat"
+
+A subdirectory or file ..\..\..\bin\client\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\server\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: Represent3 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP379B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\..\engine\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "REPRESENT3_EXPORTS" /FR"Debug/" /Fp"Debug/Represent3.pch" /Yu"precompile.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\Represent3\D3D_Device.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\Represent3\D3D_Shell.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\Represent3\D3D_Utils.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\Represent3\KRepresentShell3.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\Represent3\TextureRes.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\Represent3\TextureResMgr.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSP379B.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP379C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\..\engine\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "REPRESENT3_EXPORTS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\iRepresent\Font\KCharSet.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\iRepresent\Font\KFont3.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\iRepresent\Font\KFontData.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\iRepresent\Font\KFontRes.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\iRepresent\Font\KMRU.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\iRepresent\RepresentUtility.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\iRepresent\Text\TextProcess.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSP379C.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP379D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\..\engine\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "REPRESENT3_EXPORTS" /FR"Debug/" /Fp"Debug/Represent3.pch" /Yc"precompile.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\Represent3\precompile.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSP379D.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP379E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib d3dx9dt.lib d3d9.lib winmm.lib dxguid.lib ddraw.lib GdiPlus.lib /nologo /dll /incremental:no /pdb:"Debug/Represent3.pdb" /map:"Debug/Represent3.map" /debug /machine:I386 /out:"Debug/Represent3.dll" /implib:"Debug/Represent3.lib" /libpath:"..\..\..\Lib" 
+".\Debug\D3D_Device.obj"
+".\Debug\D3D_Shell.obj"
+".\Debug\D3D_Utils.obj"
+".\Debug\KCharSet.obj"
+".\Debug\KFont3.obj"
+".\Debug\KFontData.obj"
+".\Debug\KFontRes.obj"
+".\Debug\KMRU.obj"
+".\Debug\KRepresentShell3.obj"
+".\Debug\precompile.obj"
+".\Debug\RepresentUtility.obj"
+".\Debug\TextProcess.obj"
+".\Debug\TextureRes.obj"
+".\Debug\TextureResMgr.obj"
+"..\..\..\Lib\debug\engine.lib"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSP379E.tmp"
+<h3>Output Window</h3>
+Compiling...
+precompile.cpp
+Compiling...
+D3D_Device.cpp
+D3D_Shell.cpp
+D3D_Utils.cpp
+KRepresentShell3.cpp
+TextureRes.cpp
+TextureResMgr.cpp
+Generating Code...
+Compiling...
+KCharSet.cpp
+KFont3.cpp
+KFontData.cpp
+KFontRes.cpp
+KMRU.cpp
+RepresentUtility.cpp
+TextProcess.cpp
+Generating Code...
+Linking...
+   Creating library Debug/Represent3.lib and object Debug/Represent3.exp
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP4143.bat" with contents
+[
+@echo off
+md ..\..\..\bin\client\debug\
+copy Debug\Represent3.dll ..\..\..\..\bin\client\Represent3.dll
+copy Debug\Represent3.pdb ..\..\..\..\bin\client\Represent3.pdb
+copy Debug\Represent3.dll ..\..\..\..\bin\client\debug\Represent3.dll
+copy Debug\Represent3.pdb ..\..\..\..\bin\client\debug\Represent3.pdb
+md ..\..\..\bin\server\debug\
+copy Debug\Represent3.dll ..\..\..\..\bin\server\Represent3.dll
+copy Debug\Represent3.dll ..\..\..\..\bin\server\debug\Represent3.dll
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSP4143.bat"
+
+A subdirectory or file ..\..\..\bin\client\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\server\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: S3Client - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Script1.res" /d "_DEBUG" "G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Script1.rc"" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP42CB.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /I "../Engine/src" /I "../Core/src" /I "../Engine/include" /I "../../Headers" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "SWORDONLINE_SHOW_DBUG_INFO" /D "SWORDONLINE_USE_MD5_PASSWORD" /FR"Debug/" /Fp"Debug/S3Client.pch" /Yu"KWin32.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\AutoLocateWnd.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\ComWindow.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\MouseHover.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\PopupMenu.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\SpaceOver.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\SpecialFuncs.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\TextPic.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\UiCursor.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\UiImage.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndBorder.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndButton.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndEdit.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndImage.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndImagePart.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndLabeledButton.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndList2.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndMessageListBox.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndMovingImage.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndObjContainer.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndPage.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndPureTextBtn.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\Wnds.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndScrollBar.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\elem\WndShadow.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndShowAnimate.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndText.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndToolBar.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndValueImage.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\Elem\WndWindow.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiConnectInfo.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiLogin.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiLoginBg.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiNotice.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiSelServer.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiChooseFace.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiContainer.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiFaceSelector.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiPlayerBar.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiPlayerControlBar.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiStatus.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiOptions.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiInit.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiAutoPlay.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiBreakItem.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiExpandItem.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiGetMoney.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiGive.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiItem.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiPlayerLock.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiSkills.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiSkillTree.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\uicase\UiStoreBox.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiESCDlg.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiGetString.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiMsgSel.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiParadeItem.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiSelPlayerNearby.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiNewPlayer.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiSelNativePlace.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiSelPlayer.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiChatCentre.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiChatPhrase.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiChatRoom.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiInformation.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiInformation1.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiInformation2.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiTeamManage.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiChatItem.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiHeaderControlBar.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\uicase\UiMsgCentrePad.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiRankData.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiToolsControlBar.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiPlayerShop.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiSetPrice.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UIcase\UiShop.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiSuperShop.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiTrade.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiTradeConfirmWnd.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiGame.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiSysMsgCentre.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiCaveList.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\uicase\UiMiniMap.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiSelColor.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiNewPlayerStartMsg.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiHelper.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiHelper2.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiReconnect.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiTaskDataFile.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiTaskNote.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiWorldMap.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiNewsMessage.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiNewsMessage2.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiNewsSysMsg.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiStrengthRank.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\ui\uicase\UiTongAssignBox.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\ui\uicase\UiTongCreateSheet.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiTongGetString.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\ui\uicase\UiTongManager.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiEnchase.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiSoundSetting.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\GameSpaceChangedNotify.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\ShortcutKey.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiBase.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiShell.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\ChatFilter.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\FilterTextLib.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\S3Client.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\NetConnect\NetConnectAgent.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Login\Login.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\TextCtrlCmd\TextCtrlCmd.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\ErrorCode.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiDaTau.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiProgressBarLoading.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiTimeOnline.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiToiUuImage.cpp"
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\UiTrembleItem.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSP42CB.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP42CC.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /I "../Engine/src" /I "../Core/src" /I "../Engine/include" /I "../../Headers" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "SWORDONLINE_SHOW_DBUG_INFO" /D "SWORDONLINE_USE_MD5_PASSWORD" /FR"Debug/" /Fp"Debug/S3Client.pch" /Yc"KWin32.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\kuetl\AppData\Local\Temp\RSP42CC.tmp" 
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP42CD.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Winmm.lib shlwapi.lib lualibdll.lib /nologo /subsystem:windows /incremental:no /pdb:"Debug/Game.pdb" /map:"Debug/Game.map" /debug /machine:I386 /out:"Debug/Game.exe" /libpath:"../../lib/" 
+".\Debug\AutoLocateWnd.obj"
+".\Debug\ComWindow.obj"
+".\Debug\MouseHover.obj"
+".\Debug\PopupMenu.obj"
+".\Debug\SpaceOver.obj"
+".\Debug\SpecialFuncs.obj"
+".\Debug\TextPic.obj"
+".\Debug\UiCursor.obj"
+".\Debug\UiImage.obj"
+".\Debug\WndBorder.obj"
+".\Debug\WndButton.obj"
+".\Debug\WndEdit.obj"
+".\Debug\WndImage.obj"
+".\Debug\WndImagePart.obj"
+".\Debug\WndLabeledButton.obj"
+".\Debug\WndList.obj"
+".\Debug\WndList2.obj"
+".\Debug\WndMessageListBox.obj"
+".\Debug\WndMovingImage.obj"
+".\Debug\WndObjContainer.obj"
+".\Debug\WndPage.obj"
+".\Debug\WndPureTextBtn.obj"
+".\Debug\Wnds.obj"
+".\Debug\WndScrollBar.obj"
+".\Debug\WndShadow.obj"
+".\Debug\WndShowAnimate.obj"
+".\Debug\WndText.obj"
+".\Debug\WndToolBar.obj"
+".\Debug\WndValueImage.obj"
+".\Debug\WndWindow.obj"
+".\Debug\UiConnectInfo.obj"
+".\Debug\UiLogin.obj"
+".\Debug\UiLoginBg.obj"
+".\Debug\UiNotice.obj"
+".\Debug\UiSelServer.obj"
+".\Debug\UiChooseFace.obj"
+".\Debug\UiContainer.obj"
+".\Debug\UiFaceSelector.obj"
+".\Debug\UiPlayerBar.obj"
+".\Debug\UiPlayerControlBar.obj"
+".\Debug\UiStatus.obj"
+".\Debug\UiOptions.obj"
+".\Debug\UiInit.obj"
+".\Debug\UiAutoPlay.obj"
+".\Debug\UiBreakItem.obj"
+".\Debug\UiExpandItem.obj"
+".\Debug\UiGetMoney.obj"
+".\Debug\UiGive.obj"
+".\Debug\UiItem.obj"
+".\Debug\UiPlayerLock.obj"
+".\Debug\UiSkills.obj"
+".\Debug\UiSkillTree.obj"
+".\Debug\UiStoreBox.obj"
+".\Debug\UiESCDlg.obj"
+".\Debug\UiGetString.obj"
+".\Debug\UiMsgSel.obj"
+".\Debug\UiParadeItem.obj"
+".\Debug\UiSelPlayerNearby.obj"
+".\Debug\UiNewPlayer.obj"
+".\Debug\UiSelNativePlace.obj"
+".\Debug\UiSelPlayer.obj"
+".\Debug\UiChatCentre.obj"
+".\Debug\UiChatPhrase.obj"
+".\Debug\UiChatRoom.obj"
+".\Debug\UiInformation.obj"
+".\Debug\UiInformation1.obj"
+".\Debug\UiInformation2.obj"
+".\Debug\UiTeamManage.obj"
+".\Debug\UiChatItem.obj"
+".\Debug\UiHeaderControlBar.obj"
+".\Debug\UiMsgCentrePad.obj"
+".\Debug\UiRankData.obj"
+".\Debug\UiToolsControlBar.obj"
+".\Debug\UiPlayerShop.obj"
+".\Debug\UiSetPrice.obj"
+".\Debug\UiShop.obj"
+".\Debug\UiSuperShop.obj"
+".\Debug\UiTrade.obj"
+".\Debug\UiTradeConfirmWnd.obj"
+".\Debug\UiGame.obj"
+".\Debug\UiSysMsgCentre.obj"
+".\Debug\UiCaveList.obj"
+".\Debug\UiMiniMap.obj"
+".\Debug\UiSelColor.obj"
+".\Debug\UiNewPlayerStartMsg.obj"
+".\Debug\UiHelper.obj"
+".\Debug\UiHelper2.obj"
+".\Debug\UiReconnect.obj"
+".\Debug\UiTaskDataFile.obj"
+".\Debug\UiTaskNote.obj"
+".\Debug\UiWorldMap.obj"
+".\Debug\UiNewsMessage.obj"
+".\Debug\UiNewsMessage2.obj"
+".\Debug\UiNewsSysMsg.obj"
+".\Debug\UiStrengthRank.obj"
+".\Debug\UiTongAssignBox.obj"
+".\Debug\UiTongCreateSheet.obj"
+".\Debug\UiTongGetString.obj"
+".\Debug\UiTongManager.obj"
+".\Debug\UiEnchase.obj"
+".\Debug\UiSoundSetting.obj"
+".\Debug\GameSpaceChangedNotify.obj"
+".\Debug\ShortcutKey.obj"
+".\Debug\UiBase.obj"
+".\Debug\UiShell.obj"
+".\Debug\ChatFilter.obj"
+".\Debug\FilterTextLib.obj"
+".\Debug\S3Client.obj"
+".\Debug\NetConnectAgent.obj"
+".\Debug\Login.obj"
+".\Debug\TextCtrlCmd.obj"
+".\Debug\ErrorCode.obj"
+".\Debug\stdafx.obj"
+".\Debug\UiDaTau.obj"
+".\Debug\UiProgressBarLoading.obj"
+".\Debug\UiTimeOnline.obj"
+".\Debug\UiToiUuImage.obj"
+".\Debug\UiTrembleItem.obj"
+".\Debug\Script1.res"
+"..\..\Lib\debug\engine.lib"
+"..\..\Lib\debug\CoreClient.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Debug\Common.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Debug\Engine.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\Debug\ExpandPackage.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackageStaticLib\Debug\ExpandPackageStaticLib.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\FilterText\Debug\FilterText.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\FilterText\FilterText_StaticLib___Win32_Debug\FilterText_StaticLib.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\Debug\LuaLibDll.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Rainbow\Debug\Rainbow.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\lib\Represent.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\Represent3\Debug\Represent3.lib"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSP42CD.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+stdafx.cpp
+Compiling...
+AutoLocateWnd.cpp
+ComWindow.cpp
+MouseHover.cpp
+PopupMenu.cpp
+SpaceOver.cpp
+SpecialFuncs.cpp
+TextPic.cpp
+UiCursor.cpp
+UiImage.cpp
+WndBorder.cpp
+WndButton.cpp
+WndEdit.cpp
+WndImage.cpp
+WndImagePart.cpp
+WndLabeledButton.cpp
+WndList.cpp
+WndList2.cpp
+WndMessageListBox.cpp
+WndMovingImage.cpp
+WndObjContainer.cpp
+Generating Code...
+Compiling...
+WndPage.cpp
+WndPureTextBtn.cpp
+Wnds.cpp
+WndScrollBar.cpp
+WndShadow.cpp
+WndShowAnimate.cpp
+WndText.cpp
+WndToolBar.cpp
+WndValueImage.cpp
+WndWindow.cpp
+UiConnectInfo.cpp
+UiLogin.cpp
+UiLoginBg.cpp
+UiNotice.cpp
+UiSelServer.cpp
+UiChooseFace.cpp
+UiContainer.cpp
+UiFaceSelector.cpp
+UiPlayerBar.cpp
+UiPlayerControlBar.cpp
+Generating Code...
+Compiling...
+UiStatus.cpp
+UiOptions.cpp
+UiInit.cpp
+UiAutoPlay.cpp
+UiBreakItem.cpp
+UiExpandItem.cpp
+UiGetMoney.cpp
+UiGive.cpp
+UiItem.cpp
+UiPlayerLock.cpp
+UiSkills.cpp
+UiSkillTree.cpp
+UiStoreBox.cpp
+UiESCDlg.cpp
+UiGetString.cpp
+UiMsgSel.cpp
+UiParadeItem.cpp
+UiSelPlayerNearby.cpp
+UiNewPlayer.cpp
+UiSelNativePlace.cpp
+Generating Code...
+Compiling...
+UiSelPlayer.cpp
+UiChatCentre.cpp
+UiChatPhrase.cpp
+UiChatRoom.cpp
+UiInformation.cpp
+UiInformation1.cpp
+UiInformation2.cpp
+UiTeamManage.cpp
+UiChatItem.cpp
+UiHeaderControlBar.cpp
+UiMsgCentrePad.cpp
+UiRankData.cpp
+UiToolsControlBar.cpp
+UiPlayerShop.cpp
+UiSetPrice.cpp
+UiShop.cpp
+UiSuperShop.cpp
+UiTrade.cpp
+UiTradeConfirmWnd.cpp
+UiGame.cpp
+Generating Code...
+Compiling...
+UiSysMsgCentre.cpp
+UiCaveList.cpp
+UiMiniMap.cpp
+UiSelColor.cpp
+UiNewPlayerStartMsg.cpp
+UiHelper.cpp
+UiHelper2.cpp
+UiReconnect.cpp
+UiTaskDataFile.cpp
+UiTaskNote.cpp
+UiWorldMap.cpp
+UiNewsMessage.cpp
+UiNewsMessage2.cpp
+UiNewsSysMsg.cpp
+UiStrengthRank.cpp
+UiTongAssignBox.cpp
+UiTongCreateSheet.cpp
+UiTongGetString.cpp
+UiTongManager.cpp
+UiEnchase.cpp
+Generating Code...
+G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\../../../Represent/iRepresent/Text/TextProcessDef.h(26) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,void *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,void *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<void *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<void *> >' : identifier was truncated to '255' characters in the debug information
+G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\../../../Represent/iRepresent/Text/TextProcessDef.h(26) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,void *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,void *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<void *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<void *> >::const_iterator' : identifier was truncated to '255' characters in the debug information
+G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\../../../Represent/iRepresent/Text/TextProcessDef.h(26) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,void *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,void *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<void *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<void *> >::_Redbl' : identifier was truncated to '255' characters in the debug information
+G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\../../../Represent/iRepresent/Text/TextProcessDef.h(26) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,void *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,void *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<void *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<void *> >::iterator' : identifier was truncated to '255' characters in the debug information
+G:\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\S3Client\Ui\UiCase\../../../Represent/iRepresent/Text/TextProcessDef.h(26) : warning C4786: 'std::_Tree<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,void *>,std::map<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,void *,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<void *> >::_Kfn,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<void *> >::_Node' : identifier was truncated to '255' characters in the debug information
+Compiling...
+UiSoundSetting.cpp
+GameSpaceChangedNotify.cpp
+ShortcutKey.cpp
+UiBase.cpp
+UiShell.cpp
+ChatFilter.cpp
+FilterTextLib.cpp
+S3Client.cpp
+NetConnectAgent.cpp
+Login.cpp
+TextCtrlCmd.cpp
+ErrorCode.cpp
+UiDaTau.cpp
+UiProgressBarLoading.cpp
+UiTimeOnline.cpp
+UiToiUuImage.cpp
+UiTrembleItem.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Game.exe - 0 error(s), 11 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LuaLibDll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\SkyGold\AppData\Local\Temp\RSP26E9.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I ".\LuaLibDll\src" /I ".\src" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LUALIBDLL_EXPORTS" /Fp"Release/LuaLibDll.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lapi.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lcode.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\ldebug.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\ldo.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lfunc.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lgc.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\llex.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lmem.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lobject.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lparser.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lstate.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lstring.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\ltable.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\ltests.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\ltm.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lua.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\LuaExtend.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lundump.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lvm.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lzio.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\baselib\lauxlib.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\baselib\lbaselib.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\baselib\ldblib.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\baselib\liolib.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\baselib\lmathlib.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\baselib\lstrlib.c"
+]
+Creating command line "cl.exe @C:\Users\SkyGold\AppData\Local\Temp\RSP26E9.tmp"
+Creating temporary file "C:\Users\SkyGold\AppData\Local\Temp\RSP26EA.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/LuaLibDll.pdb" /machine:I386 /out:"Release/LuaLibDll.dll" /implib:"Release/LuaLibDll.lib"
+.\Release\lapi.obj
+.\Release\lcode.obj
+.\Release\ldebug.obj
+.\Release\ldo.obj
+.\Release\lfunc.obj
+.\Release\lgc.obj
+.\Release\llex.obj
+.\Release\lmem.obj
+.\Release\lobject.obj
+.\Release\lparser.obj
+.\Release\lstate.obj
+.\Release\lstring.obj
+.\Release\ltable.obj
+.\Release\ltests.obj
+.\Release\ltm.obj
+.\Release\lua.obj
+.\Release\LuaExtend.obj
+.\Release\lundump.obj
+.\Release\lvm.obj
+.\Release\lzio.obj
+.\Release\lauxlib.obj
+.\Release\lbaselib.obj
+.\Release\ldblib.obj
+.\Release\liolib.obj
+.\Release\lmathlib.obj
+.\Release\lstrlib.obj
+]
+Creating command line "link.exe @C:\Users\SkyGold\AppData\Local\Temp\RSP26EA.tmp"
+<h3>Output Window</h3>
+Compiling...
+lapi.c
+Create LUA dllexport
+lcode.c
+Create LUA dllexport
+ldebug.c
+Create LUA dllexport
+ldo.c
+Create LUA dllexport
+lfunc.c
+Create LUA dllexport
+lgc.c
+Create LUA dllexport
+llex.c
+Create LUA dllexport
+lmem.c
+Create LUA dllexport
+lobject.c
+Create LUA dllexport
+lparser.c
+Create LUA dllexport
+lstate.c
+Create LUA dllexport
+lstring.c
+Create LUA dllexport
+ltable.c
+Create LUA dllexport
+ltests.c
+Create LUA dllexport
+ltm.c
+Create LUA dllexport
+lua.c
+Create LUA dllexport
+LuaExtend.c
+Create LUA dllexport
+lundump.c
+Create LUA dllexport
+lvm.c
+Create LUA dllexport
+lzio.c
+Create LUA dllexport
+lauxlib.c
+Create LUA dllexport
+lbaselib.c
+Create LUA dllexport
+ldblib.c
+Create LUA dllexport
+liolib.c
+Create LUA dllexport
+lmathlib.c
+Create LUA dllexport
+lstrlib.c
+Create LUA dllexport
+Linking...
+   Creating library Release/LuaLibDll.lib and object Release/LuaLibDll.exp
+Creating temporary file "C:\Users\SkyGold\AppData\Local\Temp\RSP32CD.bat" with contents
+[
+@echo off
+copy Release\lualibdll.lib ..\..\..\Lib\lualibdll.lib
+copy Release\lualibdll.dll ..\..\..\Lib\lualibdll.dll
+]
+Creating command line "C:\Users\SkyGold\AppData\Local\Temp\RSP32CD.bat"
+
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+LuaLibDll.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

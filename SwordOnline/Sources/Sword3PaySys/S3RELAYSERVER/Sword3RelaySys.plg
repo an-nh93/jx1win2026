@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Sword3RelaySys - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\TamLTM\AppData\Local\Temp\RSP78DF.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Toolkits\mysql++-1.7.1-1-win32-vc++\include" /I "..\Toolkits\mysql\include" /I "..\..\..\Headers" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/Sword3RelaySys.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Sword3PaySys\S3RELAYSERVER\GlobalFun.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Sword3PaySys\S3RELAYSERVER\KThread.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Sword3PaySys\S3RELAYSERVER\LogFile.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Sword3PaySys\S3RELAYSERVER\main.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Sword3PaySys\S3RELAYSERVER\S3P_MSSQLServer_Result.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Sword3PaySys\S3RELAYSERVER\S3PAccount.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Sword3PaySys\S3RELAYSERVER\S3PDB_MSSQLServer_Connection.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Sword3PaySys\S3RELAYSERVER\S3PDBConnectionPool.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Sword3PaySys\S3RELAYSERVER\S3PDBConVBC.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Sword3PaySys\S3RELAYSERVER\S3PDBSocketPool.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Sword3PaySys\S3RELAYSERVER\S3PResultVBC.cpp"
+]
+Creating command line "cl.exe @C:\Users\TamLTM\AppData\Local\Temp\RSP78DF.tmp" 
+Creating temporary file "C:\Users\TamLTM\AppData\Local\Temp\RSP78E0.tmp" with contents
+[
+S3DBInterface.lib KLVideo.lib LuaLib.lib FilterText_StaticLib.lib Engine.lib Rainbow.lib IOCPServer.lib ESClient.lib Heaven.lib Ws2_32.lib Winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Sword3RelaySys.pdb" /debug /machine:I386 /nodefaultlib:"LIBCD.lib" /out:"../../../../bin/client/Sword3RelaySys.exe" /pdbtype:sept 
+.\Debug\GlobalFun.obj
+.\Debug\KThread.obj
+.\Debug\LogFile.obj
+.\Debug\main.obj
+.\Debug\S3P_MSSQLServer_Result.obj
+.\Debug\S3PAccount.obj
+.\Debug\S3PDB_MSSQLServer_Connection.obj
+.\Debug\S3PDBConnectionPool.obj
+.\Debug\S3PDBConVBC.obj
+.\Debug\S3PDBSocketPool.obj
+.\Debug\S3PResultVBC.obj
+]
+Creating command line "link.exe @C:\Users\TamLTM\AppData\Local\Temp\RSP78E0.tmp"
+<h3>Output Window</h3>
+Compiling...
+GlobalFun.cpp
+KThread.cpp
+LogFile.cpp
+main.cpp
+S3P_MSSQLServer_Result.cpp
+S3PAccount.cpp
+S3PDB_MSSQLServer_Connection.cpp
+S3PDBConnectionPool.cpp
+S3PDBConVBC.cpp
+S3PDBSocketPool.cpp
+S3PResultVBC.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Sword3RelaySys.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

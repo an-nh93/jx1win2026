@@ -1,0 +1,141 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LuaLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\SkyGold\AppData\Local\Temp\RSP7A65.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I ".\src" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/LuaLib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lapi.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lcode.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\ldebug.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\ldo.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lfunc.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lgc.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\llex.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lmem.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lobject.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lparser.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lstate.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lstring.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\ltable.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\ltests.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\ltm.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lua.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\LuaExtend.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lundump.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lvm.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\lzio.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\baselib\lauxlib.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\baselib\lbaselib.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\baselib\ldblib.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\baselib\liolib.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\baselib\lmathlib.c"
+"D:\SourceTK\SwordOnline\Sources\Library\LuaLib\src\baselib\lstrlib.c"
+]
+Creating command line "cl.exe @C:\Users\SkyGold\AppData\Local\Temp\RSP7A65.tmp"
+Creating temporary file "C:\Users\SkyGold\AppData\Local\Temp\RSP7A66.tmp" with contents
+[
+/nologo /out:"Release\LuaLib.lib"
+.\Release\lapi.obj
+.\Release\lcode.obj
+.\Release\ldebug.obj
+.\Release\ldo.obj
+.\Release\lfunc.obj
+.\Release\lgc.obj
+.\Release\llex.obj
+.\Release\lmem.obj
+.\Release\lobject.obj
+.\Release\lparser.obj
+.\Release\lstate.obj
+.\Release\lstring.obj
+.\Release\ltable.obj
+.\Release\ltests.obj
+.\Release\ltm.obj
+.\Release\lua.obj
+.\Release\LuaExtend.obj
+.\Release\lundump.obj
+.\Release\lvm.obj
+.\Release\lzio.obj
+.\Release\lauxlib.obj
+.\Release\lbaselib.obj
+.\Release\ldblib.obj
+.\Release\liolib.obj
+.\Release\lmathlib.obj
+.\Release\lstrlib.obj
+]
+Creating command line "link.exe -lib @C:\Users\SkyGold\AppData\Local\Temp\RSP7A66.tmp"
+<h3>Output Window</h3>
+Compiling...
+lapi.c
+LIB
+lcode.c
+LIB
+ldebug.c
+LIB
+ldo.c
+LIB
+lfunc.c
+LIB
+lgc.c
+LIB
+llex.c
+LIB
+lmem.c
+LIB
+lobject.c
+LIB
+lparser.c
+LIB
+lstate.c
+LIB
+lstring.c
+LIB
+ltable.c
+LIB
+ltests.c
+LIB
+ltm.c
+LIB
+lua.c
+LIB
+LuaExtend.c
+LIB
+lundump.c
+LIB
+lvm.c
+LIB
+lzio.c
+LIB
+lauxlib.c
+LIB
+lbaselib.c
+LIB
+ldblib.c
+LIB
+liolib.c
+LIB
+lmathlib.c
+LIB
+lstrlib.c
+LIB
+Creating library...
+Creating temporary file "C:\Users\SkyGold\AppData\Local\Temp\RSP8955.bat" with contents
+[
+@echo off
+copy debug\lualib.lib ..\..\..\Lib\lualib.lib
+]
+Creating command line "C:\Users\SkyGold\AppData\Local\Temp\RSP8955.bat"
+
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+LuaLib.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Core - Win32 Server Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSP9514.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib lualibdll.lib Ws2_32.lib Winmm.lib Shlwapi.lib /nologo /dll /incremental:no /pdb:"ServerDebug/CoreServer.pdb" /map:"ServerDebug/CoreServer.map" /debug /machine:I386 /nodefaultlib:"libc.lib" /nodefaultlib:"libcmt.lib" /nodefaultlib:"msvcrt.lib" /nodefaultlib:"libcd.lib" /nodefaultlib:"msvcrtd.lib" /out:"ServerDebug\CoreServer.dll" /implib:"ServerDebug/CoreServer.lib" /pdbtype:sept /libpath:"../../lib/" 
+".\ServerDebug\KPartnerSkill.obj"
+".\ServerDebug\KPlayerPartner.obj"
+".\ServerDebug\KThiefSkill.obj"
+".\ServerDebug\KMissle.obj"
+".\ServerDebug\KMissleRes.obj"
+".\ServerDebug\KMissleSet.obj"
+".\ServerDebug\KSkillList.obj"
+".\ServerDebug\KSkillManager.obj"
+".\ServerDebug\KSkills.obj"
+".\ServerDebug\KSkillSpecial.obj"
+".\ServerDebug\KFaction.obj"
+".\ServerDebug\KGameData.obj"
+".\ServerDebug\KNpc.obj"
+".\ServerDebug\KNpcAI.obj"
+".\ServerDebug\KNpcAttribModify.obj"
+".\ServerDebug\KNpcDeathCalcExp.obj"
+".\ServerDebug\KNpcFindPath.obj"
+".\ServerDebug\KNpcRes.obj"
+".\ServerDebug\KNpcResList.obj"
+".\ServerDebug\KNpcResNode.obj"
+".\ServerDebug\KNpcSet.obj"
+".\ServerDebug\KNpcTemplate.obj"
+".\ServerDebug\KPlayer.obj"
+".\ServerDebug\KPlayerAI.obj"
+".\ServerDebug\KPlayerChat.obj"
+".\ServerDebug\KPlayerChatRoom.obj"
+".\ServerDebug\KPlayerDBFuns.obj"
+".\ServerDebug\KPlayerFaction.obj"
+".\ServerDebug\KPlayerMenuState.obj"
+".\ServerDebug\KPlayerPK.obj"
+".\ServerDebug\KPlayerSet.obj"
+".\ServerDebug\KPlayerTask.obj"
+".\ServerDebug\KPlayerTeam.obj"
+".\ServerDebug\KPlayerTong.obj"
+".\ServerDebug\KPlayerTrade.obj"
+".\ServerDebug\KSprControl.obj"
+".\ServerDebug\KTongData.obj"
+".\ServerDebug\KBasPropTbl.obj"
+".\ServerDebug\KBuySell.obj"
+".\ServerDebug\KInventory.obj"
+".\ServerDebug\KItem.obj"
+".\ServerDebug\KItemChangeRes.obj"
+".\ServerDebug\KItemGenerator.obj"
+".\ServerDebug\KItemList.obj"
+".\ServerDebug\KItemSet.obj"
+".\ServerDebug\KObj.obj"
+".\ServerDebug\KObjSet.obj"
+".\ServerDebug\KSellItem.obj"
+".\ServerDebug\KViewItem.obj"
+".\ServerDebug\KCore.obj"
+".\ServerDebug\KSubWorld.obj"
+".\ServerDebug\KSubWorldSet.obj"
+".\ServerDebug\KWeatherMgr.obj"
+".\ServerDebug\KRegion.obj"
+".\ServerDebug\KWorldMsg.obj"
+".\ServerDebug\KMath.obj"
+".\ServerDebug\KGMProcess.obj"
+".\ServerDebug\KNewProtocolProcess.obj"
+".\ServerDebug\KProtocol.obj"
+".\ServerDebug\KProtocolProcess.obj"
+".\ServerDebug\ScriptFuns.obj"
+".\ServerDebug\KScriptValueSet.obj"
+".\ServerDebug\KSortScript.obj"
+".\ServerDebug\CoreServerShell.obj"
+".\ServerDebug\KWeather.obj"
+".\ServerDebug\KMagicDesc.obj"
+".\ServerDebug\KGMCommand.obj"
+".\ServerDebug\KMission.obj"
+".\ServerDebug\KTaskFuns.obj"
+".\ServerDebug\KOption.obj"
+".\ServerDebug\KMapMusic.obj"
+".\ServerDebug\KLadder.obj"
+".\ServerDebug\stdafx.obj"
+"..\..\Lib\debug\engine.lib"
+"..\..\Lib\debug\common.lib"
+".\Src\USBKey\EP1KDL20.LIB"
+".\Src\USBKey\EpsForJoLib.lib"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSP9514.tmp"
+<h3>Output Window</h3>
+Linking...
+   Creating library ServerDebug/CoreServer.lib and object ServerDebug/CoreServer.exp
+ServerDebug\CoreServer.dll : warning LNK4084: total image size 769867776 exceeds max (268435456); image may not run
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPA3CB.bat" with contents
+[
+@echo off
+md ..\..\..\bin\server\debug
+md ..\..\lib\debug
+copy ServerDebug\CoreServer.map ..\..\..\bin\server\Coreserver.map
+copy ServerDebug\CoreServer.pdb ..\..\..\bin\server\Coreserver.pdb
+copy ServerDebug\CoreServer.dll ..\..\..\bin\server\Coreserver.dll
+copy ServerDebug\CoreServer.map ..\..\..\bin\server\debug\Coreserver.map
+copy ServerDebug\CoreServer.pdb ..\..\..\bin\server\debug\Coreserver.pdb
+copy ServerDebug\CoreServer.dll ..\..\..\bin\server\debug\Coreserver.dll
+copy ServerDebug\CoreServer.lib ..\..\lib\debug\CoreServer.lib
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSPA3CB.bat"
+
+A subdirectory or file ..\..\..\bin\server\debug already exists.
+A subdirectory or file ..\..\lib\debug already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: Represent2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPA6E9.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib GdiPlus.lib /nologo /dll /incremental:no /pdb:"Debug/Represent2.pdb" /map:"Debug/Represent2.map" /debug /machine:I386 /out:"Debug/Represent2.dll" /implib:"../../../lib/Represent.lib" /pdbtype:sept 
+".\Debug\KImageStore2.obj"
+".\Debug\RepresentUtility.obj"
+".\Debug\KRepresentShell2.obj"
+".\Debug\KFont2.obj"
+".\Debug\KFontData.obj"
+".\Debug\TextProcess.obj"
+".\Debug\ImageOperation.obj"
+"..\..\..\Lib\debug\engine.lib"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSPA6E9.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+   Creating library ../../../lib/Represent.lib and object ../../../lib/Represent.exp
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPA8EE.bat" with contents
+[
+@echo off
+md ..\..\..\bin\client\debug\
+copy Debug\Represent2.dll ..\..\..\..\bin\client\Represent2.dll
+copy Debug\Represent2.dll ..\..\..\..\bin\client\debug\Represent2.dll
+md ..\..\..\bin\server\debug\
+copy Debug\Represent2.dll ..\..\..\..\bin\server\Represent2.dll
+copy Debug\Represent2.dll ..\..\..\..\bin\server\debug\Represent2.dll
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSPA8EE.bat"
+
+A subdirectory or file ..\..\..\bin\client\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\server\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: Represent3 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPACB7.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib d3dx9dt.lib d3d9.lib winmm.lib dxguid.lib ddraw.lib GdiPlus.lib /nologo /dll /incremental:no /pdb:"Debug/Represent3.pdb" /map:"Debug/Represent3.map" /debug /machine:I386 /out:"Debug/Represent3.dll" /implib:"Debug/Represent3.lib" /libpath:"..\..\..\Lib" 
+".\Debug\D3D_Device.obj"
+".\Debug\D3D_Shell.obj"
+".\Debug\D3D_Utils.obj"
+".\Debug\KCharSet.obj"
+".\Debug\KFont3.obj"
+".\Debug\KFontData.obj"
+".\Debug\KFontRes.obj"
+".\Debug\KMRU.obj"
+".\Debug\KRepresentShell3.obj"
+".\Debug\precompile.obj"
+".\Debug\RepresentUtility.obj"
+".\Debug\TextProcess.obj"
+".\Debug\TextureRes.obj"
+".\Debug\TextureResMgr.obj"
+"..\..\..\Lib\debug\engine.lib"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSPACB7.tmp"
+<h3>Output Window</h3>
+Linking...
+   Creating library Debug/Represent3.lib and object Debug/Represent3.exp
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPB4E6.bat" with contents
+[
+@echo off
+md ..\..\..\bin\client\debug\
+copy Debug\Represent3.dll ..\..\..\..\bin\client\Represent3.dll
+copy Debug\Represent3.pdb ..\..\..\..\bin\client\Represent3.pdb
+copy Debug\Represent3.dll ..\..\..\..\bin\client\debug\Represent3.dll
+copy Debug\Represent3.pdb ..\..\..\..\bin\client\debug\Represent3.pdb
+md ..\..\..\bin\server\debug\
+copy Debug\Represent3.dll ..\..\..\..\bin\server\Represent3.dll
+copy Debug\Represent3.dll ..\..\..\..\bin\server\debug\Represent3.dll
+]
+Creating command line "C:\Users\kuetl\AppData\Local\Temp\RSPB4E6.bat"
+
+A subdirectory or file ..\..\..\bin\client\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+A subdirectory or file ..\..\..\bin\server\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+<h3>
+--------------------Configuration: S3Client - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\kuetl\AppData\Local\Temp\RSPB7A6.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Winmm.lib shlwapi.lib lualibdll.lib /nologo /subsystem:windows /incremental:no /pdb:"Debug/Game.pdb" /map:"Debug/Game.map" /debug /machine:I386 /out:"Debug/Game.exe" /libpath:"../../lib/" 
+".\Debug\AutoLocateWnd.obj"
+".\Debug\ComWindow.obj"
+".\Debug\MouseHover.obj"
+".\Debug\PopupMenu.obj"
+".\Debug\SpaceOver.obj"
+".\Debug\SpecialFuncs.obj"
+".\Debug\TextPic.obj"
+".\Debug\UiCursor.obj"
+".\Debug\UiImage.obj"
+".\Debug\WndBorder.obj"
+".\Debug\WndButton.obj"
+".\Debug\WndEdit.obj"
+".\Debug\WndImage.obj"
+".\Debug\WndImagePart.obj"
+".\Debug\WndLabeledButton.obj"
+".\Debug\WndList.obj"
+".\Debug\WndList2.obj"
+".\Debug\WndMessageListBox.obj"
+".\Debug\WndMovingImage.obj"
+".\Debug\WndObjContainer.obj"
+".\Debug\WndPage.obj"
+".\Debug\WndPureTextBtn.obj"
+".\Debug\Wnds.obj"
+".\Debug\WndScrollBar.obj"
+".\Debug\WndShadow.obj"
+".\Debug\WndShowAnimate.obj"
+".\Debug\WndText.obj"
+".\Debug\WndToolBar.obj"
+".\Debug\WndValueImage.obj"
+".\Debug\WndWindow.obj"
+".\Debug\UiConnectInfo.obj"
+".\Debug\UiLogin.obj"
+".\Debug\UiLoginBg.obj"
+".\Debug\UiNotice.obj"
+".\Debug\UiSelServer.obj"
+".\Debug\UiChooseFace.obj"
+".\Debug\UiContainer.obj"
+".\Debug\UiFaceSelector.obj"
+".\Debug\UiPlayerBar.obj"
+".\Debug\UiPlayerControlBar.obj"
+".\Debug\UiStatus.obj"
+".\Debug\UiOptions.obj"
+".\Debug\UiInit.obj"
+".\Debug\UiAutoPlay.obj"
+".\Debug\UiBreakItem.obj"
+".\Debug\UiExpandItem.obj"
+".\Debug\UiGetMoney.obj"
+".\Debug\UiGive.obj"
+".\Debug\UiItem.obj"
+".\Debug\UiPlayerLock.obj"
+".\Debug\UiSkills.obj"
+".\Debug\UiSkillTree.obj"
+".\Debug\UiStoreBox.obj"
+".\Debug\UiESCDlg.obj"
+".\Debug\UiGetString.obj"
+".\Debug\UiMsgSel.obj"
+".\Debug\UiParadeItem.obj"
+".\Debug\UiSelPlayerNearby.obj"
+".\Debug\UiNewPlayer.obj"
+".\Debug\UiSelNativePlace.obj"
+".\Debug\UiSelPlayer.obj"
+".\Debug\UiChatCentre.obj"
+".\Debug\UiChatPhrase.obj"
+".\Debug\UiChatRoom.obj"
+".\Debug\UiInformation.obj"
+".\Debug\UiInformation1.obj"
+".\Debug\UiInformation2.obj"
+".\Debug\UiTeamManage.obj"
+".\Debug\UiChatItem.obj"
+".\Debug\UiHeaderControlBar.obj"
+".\Debug\UiMsgCentrePad.obj"
+".\Debug\UiRankData.obj"
+".\Debug\UiToolsControlBar.obj"
+".\Debug\UiPlayerShop.obj"
+".\Debug\UiSetPrice.obj"
+".\Debug\UiShop.obj"
+".\Debug\UiSuperShop.obj"
+".\Debug\UiTrade.obj"
+".\Debug\UiTradeConfirmWnd.obj"
+".\Debug\UiGame.obj"
+".\Debug\UiSysMsgCentre.obj"
+".\Debug\UiCaveList.obj"
+".\Debug\UiMiniMap.obj"
+".\Debug\UiSelColor.obj"
+".\Debug\UiNewPlayerStartMsg.obj"
+".\Debug\UiHelper.obj"
+".\Debug\UiHelper2.obj"
+".\Debug\UiReconnect.obj"
+".\Debug\UiTaskDataFile.obj"
+".\Debug\UiTaskNote.obj"
+".\Debug\UiWorldMap.obj"
+".\Debug\UiNewsMessage.obj"
+".\Debug\UiNewsMessage2.obj"
+".\Debug\UiNewsSysMsg.obj"
+".\Debug\UiStrengthRank.obj"
+".\Debug\UiTongAssignBox.obj"
+".\Debug\UiTongCreateSheet.obj"
+".\Debug\UiTongGetString.obj"
+".\Debug\UiTongManager.obj"
+".\Debug\UiEnchase.obj"
+".\Debug\UiSoundSetting.obj"
+".\Debug\GameSpaceChangedNotify.obj"
+".\Debug\ShortcutKey.obj"
+".\Debug\UiBase.obj"
+".\Debug\UiShell.obj"
+".\Debug\ChatFilter.obj"
+".\Debug\FilterTextLib.obj"
+".\Debug\S3Client.obj"
+".\Debug\NetConnectAgent.obj"
+".\Debug\Login.obj"
+".\Debug\TextCtrlCmd.obj"
+".\Debug\ErrorCode.obj"
+".\Debug\stdafx.obj"
+".\Debug\UiDaTau.obj"
+".\Debug\UiProgressBarLoading.obj"
+".\Debug\UiTimeOnline.obj"
+".\Debug\UiToiUuImage.obj"
+".\Debug\UiTrembleItem.obj"
+".\Debug\Script1.res"
+"..\..\Lib\debug\engine.lib"
+"..\..\Lib\debug\CoreClient.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Common\Debug\Common.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Engine\Debug\Engine.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackage2.0\Debug\ExpandPackage.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\ExpandPackageStaticLib\Debug\ExpandPackageStaticLib.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\FilterText\Debug\FilterText.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\FilterText\FilterText_StaticLib___Win32_Debug\FilterText_StaticLib.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Library\LuaLib\Debug\LuaLibDll.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\MultiServer\Rainbow\Debug\Rainbow.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\lib\Represent.lib"
+"\000.Thien-Dieu\SwordOnline\SwordOnline\Sources\Represent\Represent3\Debug\Represent3.lib"
+]
+Creating command line "link.exe @C:\Users\kuetl\AppData\Local\Temp\RSPB7A6.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+Game.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

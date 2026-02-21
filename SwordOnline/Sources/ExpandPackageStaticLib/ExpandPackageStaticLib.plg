@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ExpandPackageStaticLib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\PhucJx\AppData\Local\Temp\RSP4E75.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/ExpandPackageStaticLib.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c
+"D:\SourceTK\SwordOnline\Sources\ExpandPackage2.0\BlockSource.cpp"
+"D:\SourceTK\SwordOnline\Sources\ExpandPackage2.0\DataPointFromStream.cpp"
+"D:\SourceTK\SwordOnline\Sources\ExpandPackage2.0\DataSource.cpp"
+"D:\SourceTK\SwordOnline\Sources\ExpandPackage2.0\ExpandPackage.cpp"
+"D:\SourceTK\SwordOnline\Sources\ExpandPackage2.0\Interval.cpp"
+"D:\SourceTK\SwordOnline\Sources\ExpandPackage2.0\Package.cpp"
+"D:\SourceTK\SwordOnline\Sources\ExpandPackage2.0\PackageFileHead.cpp"
+"D:\SourceTK\SwordOnline\Sources\ExpandPackage2.0\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\PhucJx\AppData\Local\Temp\RSP4E75.tmp"
+Creating temporary file "C:\Users\PhucJx\AppData\Local\Temp\RSP4E76.tmp" with contents
+[
+/nologo /out:"Debug\ExpandPackageStaticLib.lib"
+.\Debug\BlockSource.obj
+.\Debug\DataPointFromStream.obj
+.\Debug\DataSource.obj
+.\Debug\ExpandPackage.obj
+.\Debug\Interval.obj
+.\Debug\Package.obj
+.\Debug\PackageFileHead.obj
+.\Debug\StdAfx.obj
+]
+Creating command line "link.exe -lib @C:\Users\PhucJx\AppData\Local\Temp\RSP4E76.tmp"
+<h3>Output Window</h3>
+Compiling...
+BlockSource.cpp
+DataPointFromStream.cpp
+DataSource.cpp
+ExpandPackage.cpp
+Interval.cpp
+Package.cpp
+PackageFileHead.cpp
+StdAfx.cpp
+Creating library...
+Creating temporary file "C:\Users\PhucJx\AppData\Local\Temp\RSP534A.bat" with contents
+[
+@echo off
+copy Debug\ExpandPackageStaticLib.lib ..\..\lib\debug\ExpandPackageStaticLib.lib
+]
+Creating command line "C:\Users\PhucJx\AppData\Local\Temp\RSP534A.bat"
+
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+ExpandPackageStaticLib.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

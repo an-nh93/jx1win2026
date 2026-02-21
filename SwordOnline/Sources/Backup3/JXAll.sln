@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.36631.11
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Bishop", "MultiServer\Bishop\Bishop.dsp", "{AE76D458-8662-422F-A71E-B10FCFDDF6CF}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Common", "MultiServer\Common\Common.dsp", "{697ECBED-8D0D-46C1-B1AE-A7C263B3C8F5}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Core", "Core\Core.dsp", "{474D6959-DB8A-4348-913E-E3DADE960682}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Engine", "Engine\Engine.dsp", "{355A3E91-D926-4C5F-B3FE-B725157B19DF}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "ExpandPackage", "ExpandPackage2.0\ExpandPackage.dsp", "{D9E0C73A-E2CD-46ED-9056-8DC787E3BA9F}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "ExpandPackageStaticLib", "ExpandPackageStaticLib\ExpandPackageStaticLib.dsp", "{950C3CA5-2540-4F3F-A0DE-579EB6FA237F}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "FilterText", "FilterText\FilterText.dsp", "{1ED07FD5-6307-4801-A5FB-45B3DC5029C7}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "FilterText_StaticLib", "FilterText\FilterText_StaticLib.dsp", "{EED550EE-D05C-41EA-A61B-A118CE47A434}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "GameServer", "MultiServer\GameServer\GameServer.dsp", "{6874E8DA-BE1A-450E-9B8C-988529F01EBD}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Goddess", "MultiServer\Goddess\Goddess.dsp", "{290B851E-369F-46C5-A64F-3E777FA595DF}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Heaven", "MultiServer\Heaven\Heaven.dsp", "{D28742B4-A0E2-40EA-800C-AEC2B0798515}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "LuaLibDll", "Library\LuaLib\LuaLibDll.dsp", "{B68460B4-EFB2-481C-A1C0-6BCB9D33D6A3}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Rainbow", "MultiServer\Rainbow\Rainbow.dsp", "{2889DD40-AE15-4DDB-B889-E316449D7C64}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Represent2", "Represent\Represent2\Represent2.dsp", "{7418B0C3-BCA2-4D7D-B392-2E5BC5A2ADD5}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Represent3", "Represent\Represent3\Represent3.dsp", "{74FE54A4-D880-4DEA-9565-23EE7072E9DB}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "S3Client", "S3Client\S3Client.dsp", "{D6AAD10C-9C6D-430C-A27B-97CA72DA9822}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "S3Relay", "MultiServer\S3Relay\S3Relay.dsp", "{04A79E7A-962A-4ED1-8978-8C8AB84177CB}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "S3RelayServer", "Sword3PaySys\S3RELAYSERVER\S3RelayServer.dsp", "{AF9CE0BC-468B-4799-B2D4-A1CD324C82CD}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Sword3PaySys", "Sword3PaySys\S3AccServer\Sword3PaySys.dsp", "{6A427434-0E27-4D59-87F8-2B5D4F223A1F}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34DC48A3-62A2-4412-89ED-9F3263206AE1}
+	EndGlobalSection
+EndGlobal

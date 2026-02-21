@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: KWavSound - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\SKYGOL~1\AppData\Local\Temp\RSP6C52.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/KWavSound.pdb" /debug /machine:I386 /out:"Debug/KWavSound.exe" /pdbtype:sept 
+.\Debug\KWavSound.obj
+]
+Creating command line "link.exe @C:\Users\SKYGOL~1\AppData\Local\Temp\RSP6C52.tmp"
+<h3>Output Window</h3>
+Linking...
+   Creating library Debug/KWavSound.lib and object Debug/KWavSound.exp
+KWavSound.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) void __cdecl g_MemZero(void *,unsigned long)" (__imp_?g_MemZero@@YAXPAXK@Z)
+KWavSound.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: unsigned long __thiscall KWavFile::Read(void *,unsigned long)" (__imp_?Read@KWavFile@@QAEKPAXK@Z)
+KWavSound.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall KWavFile::GetPcmWavFormat(struct tWAVEFORMATEX *)" (__imp_?GetPcmWavFormat@KWavFile@@QAEXPAUtWAVEFORMATEX@@@Z)
+KWavSound.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: unsigned long __thiscall KWavFile::GetWaveSize(void)" (__imp_?GetWaveSize@KWavFile@@QAEKXZ)
+KWavSound.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: int __thiscall KWavFile::Open(char *)" (__imp_?Open@KWavFile@@QAEHPAD@Z)
+KWavSound.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall KWavFile::~KWavFile(void)" (__imp_??1KWavFile@@QAE@XZ)
+KWavSound.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: struct IDirectSound * __thiscall KDirectSound::GetDirectSound(void)" (__imp_?GetDirectSound@KDirectSound@@QAEPAUIDirectSound@@XZ)
+KWavSound.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) class KDirectSound * g_pDirectSound" (__imp_?g_pDirectSound@@3PAVKDirectSound@@A)
+KWavSound.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall KWavFile::KWavFile(void)" (__imp_??0KWavFile@@QAE@XZ)
+LIBCD.lib(crt0.obj) : error LNK2001: unresolved external symbol _main
+Debug/KWavSound.exe : fatal error LNK1120: 10 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+KWavSound.exe - 11 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

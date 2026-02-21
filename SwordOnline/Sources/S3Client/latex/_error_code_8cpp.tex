@@ -1,0 +1,59 @@
+\doxysection{Error\+Code.\+cpp File Reference}
+\hypertarget{_error_code_8cpp}{}\label{_error_code_8cpp}\index{ErrorCode.cpp@{ErrorCode.cpp}}
+{\ttfamily \#include "{}KWin32.\+h"{}}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include "{}Error\+Code.\+h"{}}\newline
+{\ttfamily \#include "{}KEngine.\+h"{}}\newline
+{\ttfamily \#include "{}Kini\+File.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_error_code_8cpp_aafb785ddac3a16af13fc903fc54643e6}{ERROR\+\_\+\+STRING}}~"{}\textbackslash{}\textbackslash{}UI\textbackslash{}\textbackslash{}\+Error\+Msg.\+ini"{}
+\item 
+\#define \mbox{\hyperlink{_error_code_8cpp_a5613737ae05b74a798b1c3cfd7ba5af1}{NEXT\+\_\+\+LINE\+\_\+\+CHARA}}~\textquotesingle{}\texorpdfstring{$\sim$}{\string~}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_error_code_8cpp_a08d53608d5891f0a26183348c0ca79f0}{Error\+\_\+\+Set\+Error\+Code}} (unsigned int u\+Code)
+\item 
+void \mbox{\hyperlink{_error_code_8cpp_acbac0a90ceda449806f4a72aa26d54e4}{Error\+\_\+\+Set\+Error\+String}} (const char \texorpdfstring{$\ast$}{*}pcsz\+String)
+\item 
+void \mbox{\hyperlink{_error_code_8cpp_a750c830152e33ad97900dacbc6de1ea8}{Error\+\_\+\+Box}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_error_code_8cpp_aafb785ddac3a16af13fc903fc54643e6}\label{_error_code_8cpp_aafb785ddac3a16af13fc903fc54643e6} 
+\index{ErrorCode.cpp@{ErrorCode.cpp}!ERROR\_STRING@{ERROR\_STRING}}
+\index{ERROR\_STRING@{ERROR\_STRING}!ErrorCode.cpp@{ErrorCode.cpp}}
+\doxysubsubsection{\texorpdfstring{ERROR\_STRING}{ERROR\_STRING}}
+{\footnotesize\ttfamily \#define ERROR\+\_\+\+STRING~"{}\textbackslash{}\textbackslash{}UI\textbackslash{}\textbackslash{}\+Error\+Msg.\+ini"{}}
+
+\Hypertarget{_error_code_8cpp_a5613737ae05b74a798b1c3cfd7ba5af1}\label{_error_code_8cpp_a5613737ae05b74a798b1c3cfd7ba5af1} 
+\index{ErrorCode.cpp@{ErrorCode.cpp}!NEXT\_LINE\_CHARA@{NEXT\_LINE\_CHARA}}
+\index{NEXT\_LINE\_CHARA@{NEXT\_LINE\_CHARA}!ErrorCode.cpp@{ErrorCode.cpp}}
+\doxysubsubsection{\texorpdfstring{NEXT\_LINE\_CHARA}{NEXT\_LINE\_CHARA}}
+{\footnotesize\ttfamily \#define NEXT\+\_\+\+LINE\+\_\+\+CHARA~\textquotesingle{}\texorpdfstring{$\sim$}{\string~}\textquotesingle{}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_error_code_8cpp_a750c830152e33ad97900dacbc6de1ea8}\label{_error_code_8cpp_a750c830152e33ad97900dacbc6de1ea8} 
+\index{ErrorCode.cpp@{ErrorCode.cpp}!Error\_Box@{Error\_Box}}
+\index{Error\_Box@{Error\_Box}!ErrorCode.cpp@{ErrorCode.cpp}}
+\doxysubsubsection{\texorpdfstring{Error\_Box()}{Error\_Box()}}
+{\footnotesize\ttfamily void Error\+\_\+\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_error_code_8cpp_a08d53608d5891f0a26183348c0ca79f0}\label{_error_code_8cpp_a08d53608d5891f0a26183348c0ca79f0} 
+\index{ErrorCode.cpp@{ErrorCode.cpp}!Error\_SetErrorCode@{Error\_SetErrorCode}}
+\index{Error\_SetErrorCode@{Error\_SetErrorCode}!ErrorCode.cpp@{ErrorCode.cpp}}
+\doxysubsubsection{\texorpdfstring{Error\_SetErrorCode()}{Error\_SetErrorCode()}}
+{\footnotesize\ttfamily void Error\+\_\+\+Set\+Error\+Code (\begin{DoxyParamCaption}\item[{unsigned int}]{u\+Code }\end{DoxyParamCaption})}
+
+\Hypertarget{_error_code_8cpp_acbac0a90ceda449806f4a72aa26d54e4}\label{_error_code_8cpp_acbac0a90ceda449806f4a72aa26d54e4} 
+\index{ErrorCode.cpp@{ErrorCode.cpp}!Error\_SetErrorString@{Error\_SetErrorString}}
+\index{Error\_SetErrorString@{Error\_SetErrorString}!ErrorCode.cpp@{ErrorCode.cpp}}
+\doxysubsubsection{\texorpdfstring{Error\_SetErrorString()}{Error\_SetErrorString()}}
+{\footnotesize\ttfamily void Error\+\_\+\+Set\+Error\+String (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{pcsz\+String }\end{DoxyParamCaption})}
+

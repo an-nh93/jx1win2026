@@ -1,0 +1,66 @@
+\doxysection{CCR32\+C.\+h}
+\hypertarget{_c_c_r32_c_8h_source}{}\label{_c_c_r32_c_8h_source}\mbox{\hyperlink{_c_c_r32_c_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_CCRC32\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_CCRC32\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ CRC32\_POLYNOMIAL\ 0x04C11DB7}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ CRC32BUFSZ\ 1024}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_r_c32}{CCRC32}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_r_c32_a0e80cd8926b0896d679cbe4215a556d8}{Initialize}}(\textcolor{keywordtype}{void})\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ memset(\&this-\/>ulTable,\ 0,\ \textcolor{keyword}{sizeof}(this-\/>ulTable));}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ iCodes\ =\ 0;\ iCodes\ <=\ 0xFF;\ iCodes++)\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>ulTable[iCodes]\ =\ this-\/>Reflect(iCodes,\ 8)\ <<\ 24;}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ iPos\ =\ 0;\ iPos\ <\ 8;\ iPos++)\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>ulTable[iCodes]\ =}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (this-\/>ulTable[iCodes]\ <<\ 1)\ \string^\ (this-\/>ulTable[iCodes]\ \&\ (1\ <<\ 31)\ ?\ \mbox{\hyperlink{_c_c_r32_c_8h_a32104fd66e8bf60867719c6b6c877b4b}{CRC32\_POLYNOMIAL}}\ :\ 0);}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>ulTable[iCodes]\ =\ this-\/>Reflect(this-\/>ulTable[iCodes],\ 32);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00019\ \ \ \ \ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_c_c_r_c32_a72b2baf248a6f1e6d4d800add3ba4e21}{FileCRC}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *sFileName)\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ ulCRC\ =\ 0xffffffff;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ FILE\ *fSource\ =\ NULL;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ sBuf[\mbox{\hyperlink{_c_c_r32_c_8h_acf573f4d311ac2335bd920b9779518d0}{CRC32BUFSZ}}];}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ iBytesRead\ =\ 0;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((fSource\ =\ fopen(sFileName,\ \textcolor{stringliteral}{"{}rb"{}}))\ ==\ NULL)\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0xffffffff;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ iBytesRead\ =\ fread(sBuf,\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char}),\ \mbox{\hyperlink{_c_c_r32_c_8h_acf573f4d311ac2335bd920b9779518d0}{CRC32BUFSZ}},\ fSource);}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\mbox{\hyperlink{class_c_c_r_c32_aa451eb128bd9c0b283a9ad4b1893d427}{PartialCRC}}(\&ulCRC,\ sBuf,\ iBytesRead);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{while}\ (iBytesRead\ ==\ \mbox{\hyperlink{_c_c_r32_c_8h_acf573f4d311ac2335bd920b9779518d0}{CRC32BUFSZ}});}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ fclose(fSource);}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (ulCRC\ \string^\ 0xffffffff);}
+\DoxyCodeLine{00035\ \ \ \ \ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_c_c_r_c32_a2aa602450d5629bfeb1156e5e79adb3c}{FullCRC}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *sData,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ ulLength)\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ ulCRC\ =\ 0xffffffff;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ this-\/>\mbox{\hyperlink{class_c_c_r_c32_aa451eb128bd9c0b283a9ad4b1893d427}{PartialCRC}}(\&ulCRC,\ sData,\ ulLength);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ulCRC\ \string^\ 0xffffffff;}
+\DoxyCodeLine{00041\ \ \ \ \ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_r_c32_aa451eb128bd9c0b283a9ad4b1893d427}{PartialCRC}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ *ulInCRC,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *sData,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ ulLength)\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (ulLength-\/-\/)\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ *ulInCRC\ =\ (*ulInCRC\ >>\ 8)\ \string^\ this-\/>ulTable[(*ulInCRC\ \&\ 0xFF)\ \string^\ *sData++];}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ Reflect(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ ulReflect,\ \textcolor{keywordtype}{char}\ cChar)\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ ulValue\ =\ 0;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ iPos\ =\ 1;\ iPos\ <\ (cChar\ +\ 1);\ iPos++)\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ulReflect\ \&\ 1)\ ulValue\ |=\ 1\ <<\ (cChar\ -\/\ iPos);}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ ulReflect\ >>=\ 1;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ulValue;}
+\DoxyCodeLine{00057\ \ \ \ \ \};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ ulTable[256];}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

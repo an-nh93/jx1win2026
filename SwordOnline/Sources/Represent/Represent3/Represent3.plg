@@ -1,0 +1,103 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Represent3 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\TamLTM\AppData\Local\Temp\RSP66F1.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\..\engine\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "REPRESENT3_EXPORTS" /FR"Debug/" /Fp"Debug/Represent3.pch" /Yu"precompile.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\Represent3\D3D_Device.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\Represent3\D3D_Shell.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\Represent3\D3D_Utils.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\Represent3\KRepresentShell3.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\Represent3\TextureRes.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\Represent3\TextureResMgr.cpp"
+]
+Creating command line "cl.exe @C:\Users\TamLTM\AppData\Local\Temp\RSP66F1.tmp" 
+Creating temporary file "C:\Users\TamLTM\AppData\Local\Temp\RSP66F2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\..\engine\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "REPRESENT3_EXPORTS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\iRepresent\Font\KCharSet.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\iRepresent\Font\KFont3.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\iRepresent\Font\KFontData.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\iRepresent\Font\KFontRes.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\iRepresent\Font\KMRU.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\iRepresent\RepresentUtility.cpp"
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\iRepresent\Text\TextProcess.cpp"
+]
+Creating command line "cl.exe @C:\Users\TamLTM\AppData\Local\Temp\RSP66F2.tmp" 
+Creating temporary file "C:\Users\TamLTM\AppData\Local\Temp\RSP66F3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\..\engine\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "REPRESENT3_EXPORTS" /FR"Debug/" /Fp"Debug/Represent3.pch" /Yc"precompile.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\ServerTL\SRC12092020\SwordOnline\Sources\Represent\Represent3\precompile.cpp"
+]
+Creating command line "cl.exe @C:\Users\TamLTM\AppData\Local\Temp\RSP66F3.tmp" 
+Creating temporary file "C:\Users\TamLTM\AppData\Local\Temp\RSP66F4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib d3dx9dt.lib d3d9.lib winmm.lib dxguid.lib ddraw.lib GdiPlus.lib /nologo /dll /incremental:no /pdb:"Debug/Represent3.pdb" /map:"Debug/Represent3.map" /debug /machine:I386 /out:"Debug/Represent3.dll" /implib:"Debug/Represent3.lib" /libpath:"..\..\..\Lib" 
+.\Debug\D3D_Device.obj
+.\Debug\D3D_Shell.obj
+.\Debug\D3D_Utils.obj
+.\Debug\KCharSet.obj
+.\Debug\KFont3.obj
+.\Debug\KFontData.obj
+.\Debug\KFontRes.obj
+.\Debug\KMRU.obj
+.\Debug\KRepresentShell3.obj
+.\Debug\precompile.obj
+.\Debug\RepresentUtility.obj
+.\Debug\TextProcess.obj
+.\Debug\TextureRes.obj
+.\Debug\TextureResMgr.obj
+..\..\..\Lib\debug\engine.lib
+]
+Creating command line "link.exe @C:\Users\TamLTM\AppData\Local\Temp\RSP66F4.tmp"
+<h3>Output Window</h3>
+Compiling...
+precompile.cpp
+Compiling...
+D3D_Device.cpp
+D3D_Shell.cpp
+D3D_Utils.cpp
+KRepresentShell3.cpp
+TextureRes.cpp
+TextureResMgr.cpp
+Generating Code...
+Compiling...
+KCharSet.cpp
+KFont3.cpp
+KFontData.cpp
+KFontRes.cpp
+KMRU.cpp
+RepresentUtility.cpp
+TextProcess.cpp
+Generating Code...
+Linking...
+   Creating library Debug/Represent3.lib and object Debug/Represent3.exp
+Creating temporary file "C:\Users\TamLTM\AppData\Local\Temp\RSP707A.bat" with contents
+[
+@echo off
+md ..\..\..\bin\client\debug\
+copy Debug\Represent3.dll ..\..\..\..\bin\client\Represent3.dll
+copy Debug\Represent3.pdb ..\..\..\..\bin\client\Represent3.pdb
+copy Debug\Represent3.dll ..\..\..\..\bin\client\debug\Represent3.dll
+copy Debug\Represent3.pdb ..\..\..\..\bin\client\debug\Represent3.pdb
+]
+Creating command line "C:\Users\TamLTM\AppData\Local\Temp\RSP707A.bat"
+
+A subdirectory or file ..\..\..\bin\client\debug\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+Represent3.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
